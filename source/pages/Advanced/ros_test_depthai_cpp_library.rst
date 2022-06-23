@@ -41,7 +41,7 @@ ubuntu20.04推荐安装noetic版本的ROS，ubuntu18.04推荐安装melodic版本
 
 .. code-block:: bash
 
-    sudo wget -qO- https://mirror.ghproxy.com/https://raw.githubusercontent.com/luxonis/depthai-docs-website/master/source/_static/install_dependencies.sh | bash 
+    sudo wget -qO- https://raw.githubusercontent.com/luxonis/depthai-docs-website/master/source/_static/install_dependencies.sh | bash 
     sudo dpkg -i ./depthai_2.15.0_x86_64_Shared.deb
 
 如果您没有安装 opencv，请尝试:
@@ -50,7 +50,7 @@ ubuntu20.04推荐安装noetic版本的ROS，ubuntu18.04推荐安装melodic版本
 
     sudo apt install libopencv-dev
 
-如果您未安装rosdep且未初始化，请执行以下步骤:(这里安装的是melotic版本，如果想要安装ROS的其他版本，前往官网下载，建议安装ros基础版，缺什么包再装)。
+如果您未安装rosdep且未初始化，请执行以下步骤:(这里安装的是melotic版本，如果想要安装ROS的其他版本，前往官网下载)。
 
 .. code-block:: bash
 
@@ -68,7 +68,7 @@ ubuntu20.04推荐安装noetic版本的ROS，ubuntu18.04推荐安装melodic版本
     # 若无法连接到密钥服务器，可以尝试替换上面命令中的 hkp://keyserver.ubuntu.com:80 为 hkp://pgp.mit.edu:80 。
 
     sudo apt update
-    sudo apt install ros-melodic-ros-base
+    sudo apt install ros-melodic-desktop
     sudo apt install python-rosdep
     sudo rosdep init
     rosdep update
@@ -83,12 +83,6 @@ ubuntu20.04推荐安装noetic版本的ROS，ubuntu18.04推荐安装melodic版本
 
     sudo apt install python3-vcstool
 
-安装的ros其他包
-
-.. code-block:: bash
-
-    sudo apt install ros-melodic-rviz 
-
 设置程序
 ********
 
@@ -96,7 +90,7 @@ ubuntu20.04推荐安装noetic版本的ROS，ubuntu18.04推荐安装melodic版本
 
     mkdir -p <directory_for_workspaces>/src
     cd <directory_for_workspaces>
-    wget  https://mirror.ghproxy.com/https://raw.githubusercontent.com/luxonis/depthai-ros/main/underlay.repos
+    wget  https://raw.githubusercontent.com/luxonis/depthai-ros/main/underlay.repos
     vcs import src < underlay.repos
     rosdep install --from-paths src --ignore-src -r -y
     source /opt/ros/melodic/setup.bash

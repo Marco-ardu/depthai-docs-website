@@ -90,11 +90,11 @@
 Yolov5 6.0 转换成blob格式
 =======================
 
-`Yolov5 6.0 转换成blob格式 <https://www.oakchina.cn/2022/01/22/yolov5-blob/>`__
+`链接 <https://www.oakchina.cn/2022/01/22/yolov5-blob/>`__
 
 在线将YOLOV5转化成OAK能用的模型格式
 =======================
 
-`在线将YOLOV5转化成OAK能用的模型格式 <https://tools.luxonis.com/>`__
+`链接 <https://tools.luxonis.com/>`__
 
 .. include::  /pages/includes/footer-short.rst
