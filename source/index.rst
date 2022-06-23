@@ -489,6 +489,7 @@ OAK官方英文原版使用文档： `查看 <https://docs.luxonis.com/en/latest
    pages/Advanced/oak-slam.rst
    pages/Advanced/vio.rst
    pages/Advanced/scrarch.rst
+   pages/Advanced/portabletool.rst
 
 .. toctree::
    :maxdepth: 1

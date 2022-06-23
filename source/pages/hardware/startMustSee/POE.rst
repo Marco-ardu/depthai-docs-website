@@ -130,6 +130,23 @@ PoE 故障排除
           if cv2.waitKey(1) == ord('q'):
               break
 
+恢复出厂设置
+#############
+
+如果您可以ping设备但无法以任何方式连接到它（搜索设备，指定IP），您应该做一个工厂
+重置，因为设备可能已被**软砖**。 这通常发生在较旧的引导加载程序版本中。 请注意，仅
+OAK-D-PoE 和 OAK-1-PoE 具有 USB-C 连接器，OAK-D Pro PoE 具有通过 M8 连接器的 USB 连接。.
+
+#. 打开 OAK POE 摄像机的外壳
+#. 找到 USB-C 连接器和引导 DIP 开关
+#. 将 DIP 开关更改为 0x16（开关 2、4、5 向上，其他向下，如下图所示）用于 USB 通信
+#. 通过 USB-C 电缆将 OAK POE 摄像机连接到计算机
+#. Run the (first) `恢复出厂设置脚本 <https://docs.oakchina.cn/projects/api/tutorials/standalone_mode.html#factory-reset>`__
+#. 将 DIP 开关改回 0x3（开关 5,6 向上，其他开关向下）以进行 POE 通信
+#. 关闭外壳，确保垫圈在正确的位置（防水）
+
+.. image:: /_static/images/tutorials/poe/factoryReset.png
+
 .. include::  /pages/hardware/Standalone_mode.rst
 
 .. include::  /pages/includes/footer-short.rst
