@@ -35,7 +35,7 @@ Linux平台我们建议使用git直接拉取depthai仓库。
 
 .. code-block:: python
 
-    python3 depthai/depthai_dome.py
+    python3 depthai/depthai_demo.py
 
 效果如下:
 
