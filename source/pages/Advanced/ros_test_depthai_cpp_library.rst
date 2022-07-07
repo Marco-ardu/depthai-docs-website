@@ -23,9 +23,9 @@ ROS上使用预编译的depthai C++ 库
 ====== =================== ============ ========== ============== ======
 编号    平台                 系统         ROS版本    depthai版本     设备
 ====== =================== ============ ========== ============== ======
-测试一  X86 PC端            ubuntu18.04  Melodic      V2.15.0      OAK-D
-测试二  X86 PC端            ubuntu20.04  Noetic       V2.15.0      OAK-D
-测试三  arch64 Jetson nano  ubuntu18.04  Melodic      V2.15.0      OAK-D
+测试一  PC端                 ubuntu18.04  Melodic      V2.15.0      OAK-D
+测试二  PC端                 ubuntu20.04  Noetic       V2.15.0      OAK-D
+测试三  arch64 Jetson nano   ubuntu18.04  Melodic      V2.15.0      OAK-D
 ====== =================== ============ ========== ============== ======
 
 目前X86和arch64平台测试安装包没有问题。
@@ -45,6 +45,10 @@ ubuntu20.04推荐安装noetic版本的ROS，ubuntu18.04推荐安装melodic版本
     sudo dpkg -i ./depthai_2.15.0_x86_64_Shared.deb
 
 如果您没有安装 opencv，请尝试:
+
+.. note:: 
+
+    Jetson平台不需要安装opencv,系统自带
 
 .. code-block:: bash
 
@@ -139,26 +143,5 @@ ModuleNotFoundError: No module named 'pkg_resources'
     	sudo apt install --reinstall python3-pkg-resources python3-setuptools
 
 
-
-
-depthai-ros
-===================
-
-`链接 <https://gitee.com/oakchina/depthai-ros>`__
-
-depthai-ros-examples
-===================
-
-`链接 <https://gitee.com/oakchina/depthai-ros-examples>`__
-
-C++示例编译
-===================
-
-`链接 <https://github.com/richard-xx/depthai_cpp_example>`__
-
-OAK-D深度图像转2d激光数据
-===================
-
-`链接 <https://blog.csdn.net/oakchina/article/details/124821314>`__
 
 .. include::  /pages/includes/footer-short.rst

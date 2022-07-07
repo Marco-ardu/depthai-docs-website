@@ -5,6 +5,8 @@ ROS示例
     :glob:
 
     ./ros_test_depthai_cpp_library.rst
+    ./ros2_foxy_depthai_ros.rst
+    ./ros_other.rst
 
 
 .. include::  /pages/includes/footer-short.rst
