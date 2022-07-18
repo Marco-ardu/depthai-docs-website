@@ -1,12 +1,6 @@
 ROS2 Foxy + depthai_ros教程
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-由于编译depthai C++库，需要下载很多依赖库非常耗时。我们为大家预编译好了depthai C++库。可以在 `此处 <https://gitee.com/oakchina/depthai-core/releases/>`__ 下载。
-
-.. warning::
-
-    注意：我们使用的是动态编译！
-
 演示
 #####################
 
@@ -25,17 +19,6 @@ ROS2 Foxy + depthai_ros教程
 =================== ============ ========== ============== ======
 PC端                 ubuntu20.04  Foxy        V2.16.0       OAK-D
 =================== ============ ========== ============== ======
-
-.. note:: 
-
-    如果在下载raw.githubusercontent.com域名下的文件出现网络问题，可以编辑以下文件解决问题
-
-    .. code-block:: bash
-
-        sudo vim /etc/resolv.conf
-
-    .. image:: /_static/images/rosnote.jpg
-
 
 安装ROS2
 #####################
@@ -129,9 +112,18 @@ ROS 2 软件包建立在经常更新的 Ubuntu 系统上。始终建议您在安
 
 以下脚本将安装 depthai-core 并更新 USB 规则并安装 depthai 设备
 
+.. note:: 
+
+    在执行以下安装命令时，会遇到网络问题，建议科学上网，或者使用以下镜像链接替换 https://cdn.jsdelivr.net/gh/luxonis/depthai-docs-website@master/source/_static/install_dependencies.sh
+
 .. code-block:: bash
 
-    sudo wget -qO- https://raw.githubusercontent.com/luxonis/depthai-docs-website/master/source/_static/install_dependencies.sh | bash 
+    sudo wget https://raw.githubusercontent.com/luxonis/depthai-docs-website/master/source/_static/install_dependencies.sh | bash 
+
+depthai安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/releases/>`__
+
+.. code-block:: bash
+
     sudo apt install ./depthai_2.16.0_amd64.deb
 
 安装vcstool opencv colcon

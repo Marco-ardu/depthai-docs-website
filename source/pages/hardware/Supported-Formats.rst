@@ -160,7 +160,7 @@ TensorFlow*
 - ResNet v2 family (50, 101, 152)
 - SqueezeNet v1.0, v1.1
 - VGG family (VGG16, VGG19)
-- Yolo family (yolo-v2, yolo-v3, tiny-yolo-v1, tiny-yolo-v2, tiny-yolo-v3)
+- Yolo family（tiny-yolo-v1/v2/v3/v4v5/v6，yolo-v3/v4/v5/v6）
 - faster_rcnn_inception_v2, faster_rcnn_resnet101
 - ssd_mobilenet_v1
 - DeepLab-v3+

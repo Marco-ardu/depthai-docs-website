@@ -1,11 +1,5 @@
-ROS上使用预编译的depthai C++ 库
+ROS1 noetic + depthai_ros教程
 ===================================
-
-由于编译depthai C++库，需要下载很多依赖库非常耗时。我们为大家预编译好了depthai C++库。可以在 `此处 <https://gitee.com/oakchina/depthai-core/releases/>`__ 下载。
-
-.. warning::
-
-    注意：我们使用的是动态编译！
 
 演示
 *******
@@ -39,9 +33,18 @@ ubuntu20.04推荐安装noetic版本的ROS，ubuntu18.04推荐安装melodic版本
 
 以下脚本将安装 depthai-core 、更新 usb 规则。
 
+.. note:: 
+
+    在执行以下安装命令时，会遇到网络问题，建议科学上网，或者使用以下镜像链接替换 https://cdn.jsdelivr.net/gh/luxonis/depthai-docs-website@master/source/_static/install_dependencies.sh
+
 .. code-block:: bash
 
-    sudo wget -qO- https://raw.githubusercontent.com/luxonis/depthai-docs-website/master/source/_static/install_dependencies.sh | bash 
+    sudo wget https://raw.githubusercontent.com/luxonis/depthai-docs-website/master/source/_static/install_dependencies.sh | bash 
+
+depthai安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/releases/>`__
+
+.. code-block:: bash
+
     sudo dpkg -i ./depthai_2.15.0_x86_64_Shared.deb
 
 如果您没有安装 opencv，请尝试:
