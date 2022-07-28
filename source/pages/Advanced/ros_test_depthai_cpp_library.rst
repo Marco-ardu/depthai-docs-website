@@ -31,7 +31,7 @@ ubuntu20.04推荐安装noetic版本的ROS，ubuntu18.04推荐安装melodic版本
 安装依赖
 **********
 
-以下脚本将安装 depthai-core 、更新 usb 规则。
+以下脚本将安装 depthai依赖 、更新 usb 规则。
 
 .. note:: 
 
@@ -41,11 +41,11 @@ ubuntu20.04推荐安装noetic版本的ROS，ubuntu18.04推荐安装melodic版本
 
     sudo wget https://raw.githubusercontent.com/luxonis/depthai-docs-website/master/source/_static/install_dependencies.sh | bash 
 
-depthai安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/releases/>`__
+depthai core c++安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/releases/>`__
 
 .. code-block:: bash
 
-    sudo dpkg -i ./depthai_2.15.0_x86_64_Shared.deb
+    sudo apt install ./depthai_2.15.0_x86_64_Shared.deb
 
 如果您没有安装 opencv，请尝试:
 

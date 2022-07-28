@@ -461,7 +461,10 @@ OAK官方英文原版使用文档： `查看 <https://docs.luxonis.com/en/latest
    :hidden:
    :caption: OAK快速上手
 
-   pages/startQuickly/developer_Guide.rst
+   pages/startQuickly/Python.rst
+   pages/startQuickly/C++.rst
+   pages/startQuickly/MirrorAcceleration.rst
+   pages/startQuickly/usePycharm.rst
 
 
 .. toctree::

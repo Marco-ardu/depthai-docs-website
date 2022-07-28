@@ -6,7 +6,7 @@ windows10
 
 我们准备了windows平台下的python开发环境，以及depthai示例。
 
-并且python环境中已为您安装好了运行depthai示例所需的所有依赖。做到开箱即用。
+并且python环境中已为您安装好了运行depthai示例所需的依赖。做到开箱即用。
 
 .. raw:: html
 
@@ -69,58 +69,19 @@ windows10
 
 .. image:: /_static/images/GetStartedQuickly/depthaiDemoShow.png
 
-打开命令提示符，如图所示：
-
-.. image:: /_static/images/GetStartedQuickly/cmd.png
-
-如果您选择添加环境变量，则可以执行以下命令：
-
-进入刚才选择的安装目录
-
-.. code-block:: bash
-
-    cd /d %DEPTHAI_HOME%
-
-查看python版本
-
-.. code-block:: bash
-
-    python -V
-
-查看pip版本及路径
-
-.. code-block:: bash
-
-    pip -V
-
-查看已安装的库
-
-.. code-block:: bash
-
-    pip list
-
-如果您的电脑已安装过python，则可以通过 :code:`%DEPTHAI_HOME%` 变量调用我们安装好环境的python。
-
-.. code-block:: bash
-
-    "%DEPTHAI_HOME%\python\python" -V
-
 运行depthai_demo.py程序:
 
-另外，安装包带有depthai，不需要再去GitHub拉取。
-
-双击桌面的OAK Demo即可运行depthai_demo.py。
+在确认使用USB3.0连接设备后双击桌面的OAK USB3.0 Demo即可运行depthai_demo.py。
 
 .. image:: /_static/images/GetStartedQuickly/oak_demo.png
 
-也可以通过以下命令直接运行Demo:
+命令行运行depthai_demo.py:
 
 由于depthai_demo.py需要特殊版本的depthai库，我们为depthai_demo.py单独制作了一个Python环境。
 
 .. code-block:: bash
 
     cd /d %DEPTHAI_HOME%\depthai
-
     depthai_demo_python\python.exe depthai_demo.py
 
 .. image:: /_static/images/GetStartedQuickly/depthaiDemoGui.png
@@ -129,6 +90,7 @@ depthai_demo.py程序默认为GUI显示，不过目前GUI的demo还不是很稳�
 
 .. code-block:: bash
 
+    cd /d %DEPTHAI_HOME%\depthai
     depthai_demo_python\python.exe depthai_demo.py -gt cv
 
 .. image:: /_static/images/GetStartedQuickly/depthaiDemoCV.png
@@ -155,7 +117,9 @@ depthai_demo.py程序默认为GUI显示，不过目前GUI的demo还不是很稳�
 
 .. image:: /_static/images/GetStartedQuickly/calibrate_bat.png
 
-如果您想要校准其他OAK设备，可以修改depthai_calibrate.bat文件。
+如果您想要校准其他OAK设备，可以修改depthai_calibrate.bat文件
+
+用于校准的json文件在depthai目录下的resources/boards/，棋盘格大小单位是cm
 
 .. image:: /_static/images/GetStartedQuickly/modify_bat.png
 
@@ -163,13 +127,22 @@ depthai_demo.py程序默认为GUI显示，不过目前GUI的demo还不是很稳�
 
 .. code-block:: bash
 
+    cd /d %DEPTHAI_HOME%\depthai
     depthai_demo_python\python.exe calibrate.py -s 2.5 -db -brd BW1098OBC
+
+第一次运行API示例，先执行以下命令下载一些必要的模型，因为模型比较多，并没有打包到安装包里
+
+.. code-block:: bash
+
+    cd /d %DEPTHAI_HOME%
+    python\python.exe depthai_API_examples\install_requirements.py
 
 运行API示例:
 
 .. code-block:: bash
-
-    python depthai_API_examples\ColorCamera\rgb_preview.py
+    
+    cd /d %DEPTHAI_HOME%
+    python\python.exe depthai_API_examples\ColorCamera\rgb_preview.py
 
 我们还准备了许多应用示例在depthai-experiments文件夹中。
 

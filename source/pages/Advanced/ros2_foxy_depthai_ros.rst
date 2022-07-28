@@ -110,7 +110,7 @@ ROS 2 软件包建立在经常更新的 Ubuntu 系统上。始终建议您在安
 安装depthai依赖
 ****************
 
-以下脚本将安装 depthai-core 并更新 USB 规则并安装 depthai 设备
+以下脚本将安装 depthai 依赖，并更新 USB 规则并安装 depthai 设备
 
 .. note:: 
 
@@ -120,7 +120,7 @@ ROS 2 软件包建立在经常更新的 Ubuntu 系统上。始终建议您在安
 
     sudo wget https://raw.githubusercontent.com/luxonis/depthai-docs-website/master/source/_static/install_dependencies.sh | bash 
 
-depthai安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/releases/>`__
+depthai core c++安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/releases/>`__
 
 .. code-block:: bash
 
