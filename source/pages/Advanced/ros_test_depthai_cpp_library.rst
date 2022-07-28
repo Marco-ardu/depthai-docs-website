@@ -41,7 +41,7 @@ ubuntu20.04推荐安装noetic版本的ROS，ubuntu18.04推荐安装melodic版本
 
     sudo wget https://raw.githubusercontent.com/luxonis/depthai-docs-website/master/source/_static/install_dependencies.sh | bash 
 
-depthai core c++安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/releases/>`__
+depthai core安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/releases/>`__
 
 .. code-block:: bash
 
