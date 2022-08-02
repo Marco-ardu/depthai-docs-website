@@ -22,13 +22,17 @@ depthai项目链接
 
 下面是我们放在gitee上的存储库，里面有丰富的例子可供初学者使用学习。
 
-    ===================  ===============================================
-    项目                  链接
-    ===================  ===============================================
-    depthai               https://gitee.com/oakchina/depthai
-    depthai-python        https://gitee.com/oakchina/depthai-python
-    depthai-experiments   https://gitee.com/oakchina/depthai-experiments
-    ===================  ===============================================
+.. note::
+
+    新版 depthai 项目 需要 python3.8 及以上版本
+
+===================  ===============================================
+项目                  链接
+===================  ===============================================
+depthai               https://gitee.com/oakchina/depthai
+depthai-python        https://gitee.com/oakchina/depthai-python
+depthai-experiments   https://gitee.com/oakchina/depthai-experiments
+===================  ===============================================
 
 
 

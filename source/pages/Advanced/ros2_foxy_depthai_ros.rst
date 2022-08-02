@@ -73,7 +73,7 @@ PC端                 ubuntu20.04  Foxy        V2.16.0       OAK-D
 
 .. code-block:: bash
 
-    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http:/
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(source /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 
 设置存储库后更新您的 apt 存储库缓存。
 
