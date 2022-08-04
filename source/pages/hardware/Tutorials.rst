@@ -8,6 +8,5 @@
     ./startMustSee/POE.rst
     ./startMustSee/IOT.rst
     ./startMustSee/All-In-One.rst
-    ./calibration.rst
 
 .. include::  /pages/includes/footer-short.rst
