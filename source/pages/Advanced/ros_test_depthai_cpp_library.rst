@@ -31,15 +31,12 @@ ubuntu20.04推荐安装noetic版本的ROS，ubuntu18.04推荐安装melodic版本
 安装依赖
 **********
 
-以下脚本将安装 depthai依赖 、更新 usb 规则。
-
-.. note:: 
-
-    在执行以下安装命令时，会遇到网络问题，建议科学上网，或者使用以下镜像链接替换 https://cdn.jsdelivr.net/gh/luxonis/depthai-docs-website@master/source/_static/install_dependencies.sh
+更新 usb 规则。
 
 .. code-block:: bash
 
-    sudo wget https://raw.githubusercontent.com/luxonis/depthai-docs-website/master/source/_static/install_dependencies.sh | bash 
+    echo 'SUBSYSTEM=="usb", ATTRS{idVendor}=="03e7", MODE="0666"' | sudo tee /etc/udev/rules.d/80-movidius.rules
+    sudo udevadm control --reload-rules && sudo udevadm trigger
 
 depthai core安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/releases/>`__
 
@@ -75,13 +72,13 @@ depthai core安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/rel
     # 若无法连接到密钥服务器，可以尝试替换上面命令中的 hkp://keyserver.ubuntu.com:80 为 hkp://pgp.mit.edu:80 。
 
     sudo apt update
-    sudo apt install ros-melodic-desktop
-    sudo apt install python-rosdep
+    sudo apt install ros-noetic-desktop
+    sudo apt install python3-rosdep
     sudo rosdep init
     rosdep update
 
     # 设置环境
-    echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+    echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
     source ~/.bashrc
 
 安装vcstool 
@@ -95,12 +92,12 @@ depthai core安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/rel
 
 .. code-block:: bash
 
-    mkdir -p <directory_for_workspaces>/src
-    cd <directory_for_workspaces>
+    mkdir -p dai_ws/src
+    cd dai_ws
     wget  https://raw.githubusercontent.com/luxonis/depthai-ros/main/underlay.repos
     vcs import src < underlay.repos
     rosdep install --from-paths src --ignore-src -r -y
-    source /opt/ros/melodic/setup.bash
+    source /opt/ros/noetic/setup.bash
     catkin_make
     source devel/setup.bash
 
@@ -109,7 +106,7 @@ depthai core安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/rel
 
 .. code-block:: bash
 
-    cd <directory_for_workspaces>/
+    cd dai_ws
     source devel/setup.bash
     roslaunch depthai_examples stereo_node.launch
 

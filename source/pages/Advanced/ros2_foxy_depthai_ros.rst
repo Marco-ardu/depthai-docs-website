@@ -110,15 +110,13 @@ ROS 2 软件包建立在经常更新的 Ubuntu 系统上。始终建议您在安
 安装depthai依赖
 ****************
 
-以下脚本将安装 depthai依赖 、更新 usb 规则。
 
-.. note:: 
-
-    在执行以下安装命令时，会遇到网络问题，建议科学上网，或者使用以下镜像链接替换 https://cdn.jsdelivr.net/gh/luxonis/depthai-docs-website@master/source/_static/install_dependencies.sh
+更新 usb 规则。
 
 .. code-block:: bash
 
-    sudo wget https://raw.githubusercontent.com/luxonis/depthai-docs-website/master/source/_static/install_dependencies.sh | bash 
+    echo 'SUBSYSTEM=="usb", ATTRS{idVendor}=="03e7", MODE="0666"' | sudo tee /etc/udev/rules.d/80-movidius.rules
+    sudo udevadm control --reload-rules && sudo udevadm trigger
 
 depthai core安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/releases/>`__
 
