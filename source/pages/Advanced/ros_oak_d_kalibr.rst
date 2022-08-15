@@ -104,7 +104,7 @@ ROS melodic + depthai_ros :ref:`教程链接 <ROS1 noetic + depthai_ros教程>` 
 双目
 """"""""""""
 
-具体录制方法参考 `视频 <https://www.bilibili.com/video/BV1rC4y1p7ma?from=search&seid=12889677312177442999>`__
+具体录制方法参考 `视频 <https://www.bilibili.com/video/BV1it4y147Hq>`__
 
 .. code-block:: bash
 
@@ -124,7 +124,7 @@ imu
 双目+imu
 """"""""""""
 
-具体录制方法参考 `视频 <https://www.bilibili.com/video/BV1rC4y1p7ma?from=search&seid=12889677312177442999>`__
+具体录制方法参考 `视频 <https://www.bilibili.com/video/BV1it4y147Hq>`__
 
 .. code-block:: bash
 

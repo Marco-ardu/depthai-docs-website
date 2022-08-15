@@ -124,11 +124,11 @@ depthai core安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/rel
 
     sudo apt install ./depthai_2.16.0_amd64.deb
 
-安装vcstool opencv colcon
+安装opencv colcon
 
 .. code-block:: bash
     
-    sudo apt install python3-vcstool libopencv-dev python3-colcon-common-extensions -y
+    sudo apt install libopencv-dev python3-colcon-common-extensions -y
 
 设置程序
 ****************
@@ -139,8 +139,8 @@ depthai core安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/rel
 
     mkdir -p dai_ws/src
     cd dai_ws
-    wget https://raw.githubusercontent.com/luxonis/depthai-ros/main/underlay.repos
-    vcs import src < underlay.repos
+    git clone https://gitee.com/oakchina/depthai-ros.git
+    cd ../..
     source /opt/ros/foxy/setup.bash
     rosdep install --from-paths src --ignore-src -r -y
     colcon build 
@@ -154,5 +154,22 @@ depthai core安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/rel
     cd dai_ws
     source install/setup.bash
     ros2 launch depthai_examples stereo_inertial_node.launch.py
+
+运行示例
+*********
+
+Mobilenet Publisher
+
+OAK-D
+
+.. code-block:: bash
+
+    ros2 launch depthai_examples mobile_publisher.launch.py camera_model:=OAK-D
+    
+OAK-D-LITE
+
+.. code-block:: bash
+
+    ros2 launch depthai_examples mobile_publisher.launch.py camera_model:=OAK-D-LITE
 
 .. include::  /pages/includes/footer-short.rst
