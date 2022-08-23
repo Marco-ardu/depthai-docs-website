@@ -74,7 +74,7 @@ depthai core安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/rel
 .. code-block:: bash
 
     mkdir -p dai_ws/src
-    cd dai_ws
+    cd dai_ws/src
     git clone https://gitee.com/oakchina/depthai-ros.git
     cd ../..
     source /opt/ros/noetic/setup.bash
