@@ -1,4 +1,4 @@
-ubuntu18.04 OAK-D kalibr 双目+imu联合标定
+ubuntu 18.04 OAK-D kalibr 双目+imu联合标定
 ============
 
 准备
@@ -6,10 +6,10 @@ ubuntu18.04 OAK-D kalibr 双目+imu联合标定
 
 * 环境干净的ubuntu18.04系统
 * OAK-D + USB3.0数据线 (或者是其他支持双目+imu的OAK相机)
-* 打印标定板(这里使用的是Aprilgrid)， `下载地址 <https://drive.google.com/file/d/1DqKWgePodCpAKJCd_Bz-hfiEQOSnn_k0/view?usp=sharing>`__
-* 标定板配置文件，根据实际打印大小填写到april_6x6.yml
+* 打印标定板(这里使用的是Aprilgrid)， `下载地址 <https://www.oakchina.cn/wp-content/uploads/2022/08/april_6x6_80x80cm_A0.pdf>`__
+* 标定板配置文件，根据实际打印大小填写到april_6x6.yaml
 
-.. code-block:: yml
+.. code-block:: yaml
 
     #example for aprilgrid
     target_type: 'aprilgrid' #gridtype
@@ -53,11 +53,12 @@ ROS melodic + depthai_ros :ref:`教程链接 <ROS1 noetic + depthai_ros教程>` 
 .. code-block:: bash
 
     sudo apt-get install python-igraph
+    python -m pip install scipy
 
-安装ceres
+安装Ceres Solver
 """"""""""""
 
-按照 `官方教程 <http://ceres-solver.org/installation.html>`__ 安装ceres
+按照 `官方教程 <http://ceres-solver.org/installation.html>`__ 安装Ceres Solver
 
 编译code_utils
 """"""""""""
@@ -104,6 +105,10 @@ ROS melodic + depthai_ros :ref:`教程链接 <ROS1 noetic + depthai_ros教程>` 
 双目
 """"""""""""
 
+.. note::
+
+    录制双目数据要在白色背景下录制，之后的双目+imu也是
+
 具体录制方法参考 `视频 <https://www.bilibili.com/video/BV1it4y147Hq>`__
 
 .. code-block:: bash
@@ -144,15 +149,15 @@ imu
 
     cd kalibr_ws
     source devel/setup.bash
-    rosrun kalibr kalibr_calibrate_cameras --bag ../stereo.bag --topics /stereo_inertial_publisher/left/image_rect /stereo_inertial_publisher/right/image_rect --models pinhole-radtan pinhole-radtan --target ../OAK_D/april_6x6.yml 
+    rosrun kalibr kalibr_calibrate_cameras --bag ../stereo.bag --topics /stereo_inertial_publisher/left/image_rect /stereo_inertial_publisher/right/image_rect --models pinhole-radtan pinhole-radtan --target ../OAK_D/april_6x6.yaml 
 
-标定成功，但还存在误差
+标定成功，目前可以把重投影误差控制在0.5以内
 
 .. image:: /_static/images/ros_oak_d_kalibr/kalibr_oak_d__stereo_resjpg.jpg
 
 输出cam_chain.yaml
 
-.. code-block:: yml
+.. code-block:: yaml
 
     cam0:
     cam_overlaps: [1]
@@ -210,7 +215,7 @@ oak_d.launch文件内容，放在imu_utils/launch目录下
 
 输出imu_param.yaml
 
-.. code-block:: yml
+.. code-block:: yaml
 
     %YAML:1.0
     ---
@@ -248,11 +253,11 @@ oak_d.launch文件内容，放在imu_utils/launch目录下
 双目+imu
 """"""""""""
 
-需要三个文件：双目+imu的采集数据、根据生成的imu标定结果填写的imu.yml、双目标定结果
+需要三个文件：双目+imu的采集数据、根据生成的imu标定结果填写的imu.yaml、双目标定结果
 
-imu.yml
+imu.yaml
 
-.. code-block:: yml
+.. code-block:: yaml
 
     #Accelerometers
     accelerometer_noise_density: 2.52e-02   #Noise density (continuous-time)
@@ -275,7 +280,7 @@ imu.yml
 
 camchain-imucam.yaml
 
-.. code-block:: yml
+.. code-block:: yaml
 
     cam0:
         T_cam_imu:
