@@ -130,7 +130,7 @@ depthai core安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/rel
     mkdir -p dai_ws/src
     cd dai_ws/src
     git clone https://gitee.com/oakchina/depthai-ros.git
-    cd ../..
+    cd ..
     source /opt/ros/foxy/setup.bash
     rosdep install --from-paths src --ignore-src -r -y
     colcon build 
