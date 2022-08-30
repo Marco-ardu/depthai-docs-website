@@ -12,7 +12,7 @@ ubuntu 18.04 OAK-D系列相机 运行VINS-Fusion 双目+IMU
 
 相机标定参数，参考 :ref:`标定教程 <ubuntu 18.04 OAK-D kalibr 双目+imu联合标定>`
 
-三个配置文件，按照标定参数填写，填写时注意注释
+三个配置文件，按照标定参数填写，填写时注意注释，这里是 `OAK-D-S2的校准参数以及vins-fusion的配置文件 <https://gitee.com/oakchina/vins-oak-d-reference>`__
 
 三个文件放到同级目录下，可以新建目录OAK-D放到dai_ws/src/VINS-Fusion/config
 
