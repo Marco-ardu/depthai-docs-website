@@ -142,7 +142,7 @@ right.yaml
 
     cd ~/dai_ws/src
     git clone https://github.com/HKUST-Aerial-Robotics/VINS-Fusion.git
-    cd ../
+    cd ..
     catkin_make
     source ~/dai_ws/devel/setup.bash
 
@@ -159,7 +159,7 @@ right.yaml
 
 .. code-block:: bash
 
-    roslaunch depthai_examples stereo_inertial_node.launch
+    roslaunch depthai_examples stereo_inertial_node.launch enableRviz:=false depth_aligned:=false
     roslaunch vins vins_rviz.launch
     rosrun vins vins_node ～/dai_ws/src/VINS-Fusion/config/oak_d_s2/config.yaml
     (optional) rosrun loop_fusion loop_fusion_node ～/dai_ws/src/VINS-Fusion/config/oak_d_s2/config.yaml
