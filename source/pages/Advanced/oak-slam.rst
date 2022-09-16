@@ -1,28 +1,16 @@
-OAK与SLAM
-==========================
+SLAM 与 OAK
+#############
 
-.. list-table:: 
-  :widths: 5 10 10
-  :header-rows: 1
+目前luxonis官方并没有做VIO以及SLAM相关的应用支持，在即将发布的第三代相机，他们将会有开源的SLAM实现
 
-  * - 序号
-    - 项目
-    - 项目链接
-  * - 1
-    - OAK-D ORB_SLAM3
-    - `链接 <https://github.com/duncanrhamill/oakd_orbslam3>`__
-  * - 2
-    - depthai-slam
-    - `链接 <https://github.com/bharath5673/depthai-slam>`__
-  * - 3
-    - Swarm-vSLAM
-    - `链接 <https://github.com/srl-ncra/swarm-vslam>`__
-  * - 4
-    - 如何基于LXD用OAK-D和ROS noetic做ORB SLAM3？
-    - `链接 <https://www.oakchina.cn/2021/11/21/arb_slam3_ros-noetic/>`__
-  * - 5
-    - 如何使用 OAK 通过视觉 SLAM 执行定位？
-    - `链接 <https://www.oakchina.cn/2021/11/04/oak-ros-slam/>`__
+在 `这里 <https://www.oakchina.cn/2022/09/15/oak-rvc/>`__ 可以看到第二代设备和第三代设备的区别
 
+几个支持OAK-D相机的SLAM项目：
+
+- `ORB SLAM3 <https://qiita.com/nindanaoto/items/20858eca08aad90b5bab>`__ 带有 OAK-D 和 ROS1 的 ``@nimda``
+- `RTAB-Map <https://github.com/introlab/rtabmap>`__ 最近 (`PR here <https://github.com/introlab/rtabmap/pull/696>`__) 增加了对 depthai 和 OAK 相机的支持（通过 ROS）
+- `SpectacularAI's SLAM <https://twitter.com/oseiskar/status/1536344550305763328?s=20&t=YY432W59nsZd6_IhhfBW4A>`__ 与 OAK-D - 免费用于非商业用途
+- `ArduCam Visual SLAM tutorial <https://www.arducam.com/docs/opencv-ai-kit-oak/performing-location-with-visual-slam/>`__
+- `DepthAI-SLAM <https://github.com/bharath5673/depthai-slam>`__
 
 .. include::  /pages/includes/footer-short.rst

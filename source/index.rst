@@ -10,7 +10,6 @@
 
 不过请不要着急查看 :ref:`OAK快速上手 <安装depthai>` 这部分内容，我们给你规划了由浅入深的 OAK 学习路线，能让你在学习的过程中尽量减少出错的可能。
 
-.. image:: /_static/images/load.png
 
 第一部分：认识OAK硬件
 =======================
@@ -454,7 +453,8 @@ OAK官方英文原版使用文档： `查看 <https://docs.luxonis.com/en/latest
    pages/hardware/Supported-Formats.rst
    pages/hardware/Tutorials.rst
    pages/hardware/calibration.rst
-   pages/hardware/waterproof.rst
+   pages/hardware/Synchronizingframes.rst
+   pages/hardware/other.rst
 
 
 .. toctree::
@@ -492,7 +492,6 @@ OAK官方英文原版使用文档： `查看 <https://docs.luxonis.com/en/latest
    pages/Advanced/slam.rst
    pages/Advanced/ros.rst
    pages/Advanced/oak-slam.rst
-   pages/Advanced/vio.rst
    pages/Advanced/scrarch.rst
    pages/Advanced/portabletool.rst
 

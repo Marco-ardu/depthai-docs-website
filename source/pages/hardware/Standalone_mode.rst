@@ -1,5 +1,10 @@
 Standalone 模式
 ##########################
+.. note:: 
+
+    `这个链接是我们做的POE独立运行模式教程 <https://www.oakchina.cn/2022/08/27/oak-poe-standalone/>`__
+    以下是luxonis官方的教程
+
 
 **Standalone / Hostless / On-The-Edge 模式** 意味着 OAK
 没有连接到主机。这可以通过 `闪存

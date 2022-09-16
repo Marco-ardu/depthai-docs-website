@@ -44,7 +44,7 @@ Ubuntu
 
 .. code-block:: bash
 
-    python3 depthai-demo.py
+    python3 depthai_demo.py
 
 **注意!** 如果从 PyPi 安装后 opencv 失败并显示非法指令，请添加：
 

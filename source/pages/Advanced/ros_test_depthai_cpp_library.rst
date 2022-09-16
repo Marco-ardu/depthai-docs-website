@@ -119,35 +119,5 @@ OAK-D-LITE
 * ImageConverter - 使用 ``roslaunch depthai_examples stereo_inertial_node.launch`` && ``roslaunch depthai_examples rgb_publisher.launch`` 测试
 * ImgDetectionCnverter - 测试使用 ``roslaunch depthai_examples mobile_publisher.launch``
 * SpatialImgDetectionConverter - 测试使用 ``roslaunch depthai_examples stereo_inertial_node.launch``
-  
-常见问题及解决方案
-******************
-1. 执行catkin_make出现的错误1
-   
-.. image:: /_static/images/catkin_make_error1.png
-
-请参考 `此处 <https://github.com/ros-perception/vision_opencv/issues/389#issuecomment-841312500>`__ 的解决方案。
-
-2. 执行catkin_make出现的错误2
-   
-.. code-block:: bash
-
-    /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.2.0: undefined reference to `TIFFSetErrorHandler@LIBTIFF_4.0'
-    /usr/bin/ld: /lib/libgdal.so.26: undefined reference to `TIFFSetDirectory@LIBTIFF_4.0'
-    /usr/bin/ld: /lib/libgdal.so.26: undefined reference to `TIFFReadScanline@LIBTIFF_4.0'
-    /usr/bin/ld: /lib/libgdal.so.26: undefined reference to `TIFFNumberOfTiles@LIBTIFF_4.0'
-    /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.2.0: undefined reference to `TIFFReadRGBAStrip@LIBTIFF_4.0'
-    collect2: error: ld returned 1 exit status
-    make[2]: *** [luxonis/depthai-ros-examples/depthai_examples/CMakeFiles/rgb_node.dir/build.make:181：/home/xiaotang/depthai_build/devel/lib/depthai_examples/rgb_node] 错误 1
-    make[1]: *** [CMakeFiles/Makefile2:2382：luxonis/depthai-ros-examples/depthai_examples/CMakeFiles/rgb_node.dir/all] 错误 2
-
-遇到上面问题，检查是否把conda环境取消。
-
-3. 执行catkin_make出现的错误3
-ModuleNotFoundError: No module named 'pkg_resources'
-
-.. code-block:: bash
-
-    	sudo apt install --reinstall python3-pkg-resources python3-setuptools
 
 .. include::  /pages/includes/footer-short.rst
