@@ -8,7 +8,7 @@ Raspberry Pi
     =============  =============================================== ======
     平台            链接                                             密码
     =============  =============================================== ======
-    Raspberry Pi   https://pan.baidu.com/s/1c84oDpEXT7VqAwfz4UstLQ  surj
+    Raspberry Pi   https://pan.baidu.com/s/14NEX3uNWHZXvSsNki6dp-A  rdp4
     =============  =============================================== ======
 
 **sourceforge**: 
