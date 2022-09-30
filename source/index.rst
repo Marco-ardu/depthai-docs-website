@@ -453,7 +453,7 @@ OAK官方英文原版使用文档： `查看 <https://docs.luxonis.com/en/latest
    pages/hardware/Supported-Formats.rst
    pages/hardware/Tutorials.rst
    pages/hardware/calibration.rst
-   pages/hardware/Synchronizingframes.rst
+   pages/hardware/other/waterproof.rst
    pages/hardware/other.rst
 
 

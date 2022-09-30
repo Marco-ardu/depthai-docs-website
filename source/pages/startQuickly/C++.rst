@@ -15,7 +15,7 @@ depthai core c++安装包 `下载地址 <https://gitee.com/oakchina/depthai-core
 
     sudo apt install ./depthai_2.17.1_amd64.deb
 
-ROS示例
+ROS相关
 ###################
 
 :ref:`链接 <ROS示例>`
