@@ -161,8 +161,8 @@ right.yaml
 
     roslaunch depthai_examples stereo_inertial_node.launch enableRviz:=false depth_aligned:=false
     roslaunch vins vins_rviz.launch
-    rosrun vins vins_node ～/dai_ws/src/VINS-Fusion/config/oak_d_s2/config.yaml
-    (optional) rosrun loop_fusion loop_fusion_node ～/dai_ws/src/VINS-Fusion/config/oak_d_s2/config.yaml
+    rosrun vins vins_node ~/dai_ws/src/VINS-Fusion/config/oak_d_s2/config.yaml
+    (optional) rosrun loop_fusion loop_fusion_node ~/dai_ws/src/VINS-Fusion/config/oak_d_s2/config.yaml
 
 .. image:: /_static/images/ros_oak_d_kalibr/vins_fusion_res.png
 

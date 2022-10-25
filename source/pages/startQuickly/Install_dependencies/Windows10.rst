@@ -1,7 +1,7 @@
 windows
 ==========================
 
-windows10
+Windows 10/11
 ##########################
 
 我们准备了windows平台下的python开发环境，以及depthai示例。
