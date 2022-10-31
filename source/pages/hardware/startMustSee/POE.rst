@@ -130,6 +130,11 @@ PoE 故障排除
           if cv2.waitKey(1) == ord('q'):
               break
 
+PoE设备独立模式
+#############
+
+这是我们写的PoE教程，可以在此 `链接 <https://www.oakchina.cn/2022/08/27/oak-poe-standalone/>`__ 查看
+
 恢复出厂设置
 #############
 

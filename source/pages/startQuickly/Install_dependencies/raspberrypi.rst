@@ -1,4 +1,4 @@
-Raspberry Pi
+Raspberry Pi(树莓派)
 ======================
 
 下载OAK树莓派镜像

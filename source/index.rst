@@ -433,14 +433,6 @@ OAK官方英文原版使用文档： `查看 <https://docs.luxonis.com/en/latest
 
 .. include::  /pages/includes/footer-long.rst
 
-.. .. toctree::
-..    :maxdepth: 1
-..    :numbered: 3
-..    :hidden:
-..    :caption: 前言
-
-..    pages/foreword.rst
-
 .. toctree::
    :maxdepth: 1
    :numbered: 3
@@ -450,7 +442,6 @@ OAK官方英文原版使用文档： `查看 <https://docs.luxonis.com/en/latest
    pages/hardware/Product-family-introduction.rst
    pages/hardware/Product-model-explanation.rst
    pages/hardware/Connection-considerations.rst
-   pages/hardware/Supported-Formats.rst
    pages/hardware/Tutorials.rst
    pages/hardware/calibration.rst
    pages/hardware/other/waterproof.rst
@@ -486,6 +477,7 @@ OAK官方英文原版使用文档： `查看 <https://docs.luxonis.com/en/latest
    :hidden:
    :caption: 进阶OAK玩法
 
+   pages/Advanced/Supported-Formats.rst
    pages/Advanced/download.rst
    pages/Advanced/convert.rst
    pages/Advanced/Neural-networks.rst
