@@ -67,6 +67,12 @@ depthai core安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/rel
     echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
     source ~/.bashrc
 
+安装rviz-imu-plugin
+
+.. code-block:: bash
+    
+    sudo apt install libopencv-dev ros-foxy-rviz-imu-plugin -y
+
 设置程序
 
 ********

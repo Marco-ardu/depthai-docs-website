@@ -120,6 +120,12 @@ depthai core安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/rel
     
     sudo apt install libopencv-dev python3-colcon-common-extensions -y
 
+安装rviz-imu-plugin
+
+.. code-block:: bash
+    
+    sudo apt install libopencv-dev ros-foxy-rviz-imu-plugin -y
+
 设置程序
 ****************
 

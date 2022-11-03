@@ -2,7 +2,7 @@ windows
 ==========================
 
 Windows 10/11
-##########################
+----------
 
 我们准备了windows平台下的python开发环境，以及depthai示例。
 
@@ -37,7 +37,10 @@ Windows 10/11
 
 .. note:: 
 
-    这个安装包的depthai版本版本号是2.17.0.0，更新时间2022-07-21。部分示例可能会在gitee上不定期更新，最新示例请在 `此处 <https://gitee.com/oakchina/depthai-experiments>`_ 查看。
+    这个安装包的depthai版本版本号是2.19.0.0，更新时间2022-11-03。部分示例可能会在gitee上不定期更新，最新示例请在 `此处 <https://gitee.com/oakchina/depthai-experiments>`_ 查看。
+
+安装
+^^^^^^^^^^^
 
 安装程序下载好后，双击安装。
 
@@ -48,8 +51,6 @@ Windows 10/11
 .. image:: /_static/images/GetStartedQuickly/selectDir.png
 
 选择菜单目录
-
-建议不要安装在C盘。
 
 .. image:: /_static/images/GetStartedQuickly/meunDir.png
 
@@ -65,35 +66,25 @@ Windows 10/11
 
 .. image:: /_static/images/GetStartedQuickly/success.png
 
-此时可以看到桌面有一个bat的快捷方式，双击它可以直接运行depthai_demo.py程序。
-
-.. image:: /_static/images/GetStartedQuickly/depthaiDemoShow.png
-
-运行depthai_demo.py程序:
+运行depthai_demo.py
+^^^^^^^^^^^
 
 在确认使用USB3.0连接设备后双击桌面的OAK USB3.0 Demo即可运行depthai_demo.py。
 
 .. image:: /_static/images/GetStartedQuickly/oak_demo.png
 
+.. image:: /_static/images/GetStartedQuickly/depthaiDemoShow.png
+
 命令行运行depthai_demo.py:
 
-由于depthai_demo.py需要特殊版本的depthai库，我们为depthai_demo.py单独制作了一个Python环境。
+我们为depthai_demo.py单独制作了一个Python环境，这个环境也可以用来校准
 
 .. code-block:: bash
 
     cd /d %DEPTHAI_HOME%\depthai
     depthai_demo_python\python.exe depthai_demo.py
 
-.. image:: /_static/images/GetStartedQuickly/depthaiDemoGui.png
-
-depthai_demo.py程序默认为GUI显示，不过目前GUI的demo还不是很稳定，可以使用 :code:`-gt` 参数设置opencv显示。
-
-.. code-block:: bash
-
-    cd /d %DEPTHAI_HOME%\depthai
-    depthai_demo_python\python.exe depthai_demo.py -gt cv
-
-.. image:: /_static/images/GetStartedQuickly/depthaiDemoCV.png
+.. image:: /_static/images/GetStartedQuickly/depthaiDemoCmdShow.png
 
 .. warning::
 
@@ -111,7 +102,8 @@ depthai_demo.py程序默认为GUI显示，不过目前GUI的demo还不是很稳�
 
     如果下载太慢，您可以将用户目录下的.cache文件夹中blobconverter文件夹复制到上面代码中所指定的文件夹中。
 
-运行校准程序:
+运行校准程序
+^^^^^^^^^^^
 
 在DEPTHAI_HOME中，我们还准备了为OAK-D校准的bat程序。
 
@@ -130,26 +122,49 @@ depthai_demo.py程序默认为GUI显示，不过目前GUI的demo还不是很稳�
     cd /d %DEPTHAI_HOME%\depthai
     depthai_demo_python\python.exe calibrate.py -s 2.5 -db -brd BW1098OBC
 
-第一次运行API示例，先执行以下命令下载一些必要的模型，因为模型比较多，并没有打包到安装包里
+cam_test.py
+^^^^^^^^^^^
+
+在2.19.0版本之后，depthai-python增加了cam_test.py实用程序，路径为 **depthai-python\\utilities\\**
 
 .. code-block:: bash
 
     cd /d %DEPTHAI_HOME%
-    python\python.exe depthai_API_examples\install_requirements.py
+    python\python.exe depthai-python\utilities\cam_test.py -h
 
-运行API示例:
+.. image:: /_static/images/GetStartedQuickly/camTestHelp.png
+
+以下使用的设备是OAK-FFC-4P 4目OV9782
+
+.. code-block:: bash
+
+    python\python.exe depthai-python\utilities\cam_test.py -cams rgb,c left,c right,c camd,c -rs -cres 800
+
+.. image:: /_static/images/GetStartedQuickly/camTestShow.png
+
+device_manager.exe
+^^^^^^^^^^^
+
+在2.19.0版本之后，我们把device_manager.py打包成了exe程序，路径为 **depthai-python\\utilities\\** 可以直接点击运行
+
+.. image:: /_static/images/GetStartedQuickly/device_manager.png
+
+.. image:: /_static/images/GetStartedQuickly/device_manager_show.png
+
+运行API示例
+^^^^^^^^^^^
 
 .. code-block:: bash
     
     cd /d %DEPTHAI_HOME%
-    python\python.exe depthai_API_examples\ColorCamera\rgb_preview.py
+    python\python.exe depthai-python\examples\ColorCamera\rgb_preview.py
 
 我们还准备了许多应用示例在depthai-experiments文件夹中。
 
 .. image:: /_static/images/GetStartedQuickly/depthaiExperiments.png
 
 Windows 7
-########################
+----------
 
 尽管我们不正式支持Windows 7, 但是我们的社区成员 `已经成功 <https://discuss.luxonis.com/d/105-run-on-win7-sp1-x64-manual-instal-usb-driver>`__ 使用 `Zadig
 <https://zadig.akeo.ie/>`__ 手动安装WinUSB . 连接DepthAI设备后，寻找具有 :code:`USB ID:03E7 2485` 的设备并选择WinUSB（v6.1.7600.16385）安装WinUSB驱动程序，然后安装WCID驱动程序。
