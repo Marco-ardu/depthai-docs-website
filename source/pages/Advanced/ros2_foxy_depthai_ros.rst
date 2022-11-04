@@ -124,7 +124,7 @@ depthai core安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/rel
 
 .. code-block:: bash
     
-    sudo apt install libopencv-dev ros-foxy-rviz-imu-plugin -y
+    sudo apt install ros-foxy-rviz-imu-plugin -y
 
 设置程序
 ****************
