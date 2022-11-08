@@ -44,7 +44,7 @@ depthai core安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/rel
 
     sudo apt install libopencv-dev
 
-如果您未安装rosdep且未初始化，请执行以下步骤:(这里安装的是melotic版本，如果想要安装ROS的其他版本，前往官网下载)。
+如果您未安装rosdep且未初始化，请执行以下步骤:(这里安装的是noetic版本，如果想要安装ROS的其他版本，前往官网下载)。
 
 .. code-block:: bash
 
