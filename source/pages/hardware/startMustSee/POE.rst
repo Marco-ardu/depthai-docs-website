@@ -140,16 +140,28 @@ PoE设备独立模式
 
 如果您可以ping设备但无法以任何方式连接到它（搜索设备，指定IP），您应该做一个工厂
 重置，因为设备可能已被 **软砖** 。 这通常发生在较旧的引导加载程序版本中。 请注意，仅
-OAK-D-PoE 和 OAK-1-PoE 具有 USB-C 连接器，OAK-D Pro PoE 具有通过 M8 连接器的 USB 连接。.
+OAK-D-PoE 和 OAK-1-PoE 具有 USB-C 连接器，OAK-D Pro PoE 具有通过 M8 连接器的 USB 连接。
 
-#. 打开 OAK POE 摄像机的外壳
-#. 找到 USB-C 连接器和引导 DIP 开关
-#. 将 DIP 开关更改为 0x16（开关 2、4、5 向上，其他向下，如下图所示）用于 USB 通信
-#. 通过 USB-C 电缆将 OAK POE 摄像机连接到计算机
-#. Run the (first) `恢复出厂设置脚本 <https://docs.oakchina.cn/projects/api/components/bootloader.html#device-manager>`__
-#. 将 DIP 开关改回 0x3（开关 5,6 向上，其他开关向下）以进行 POE 通信
-#. 关闭外壳，确保垫圈在正确的位置（防水）
+.. tabs::
 
-.. image:: /_static/images/tutorials/poe/factoryReset.png
+    .. tab:: 一代OAK-POE
+
+        以下步骤适用于OAK-D-PoE和OAK-1-PoE设备。
+
+        #. 打开 OAK POE 摄像机的外壳
+        #. 找到 USB-C 连接器和引导 DIP 开关
+        #. 将 DIP 开关更改为 0x16（开关 2、4、5 向上，其他向下，如下图所示）用于 USB 通信
+        #. 通过 USB-C 电缆将 OAK POE 摄像机连接到计算机
+        #. Run the (first) `恢复出厂设置脚本 <https://docs.oakchina.cn/projects/api/components/bootloader.html#device-manager>`__
+        #. 将 DIP 开关改回 0x3（开关 5,6 向上，其他开关向下）以进行 POE 通信
+        #. 关闭外壳，确保垫圈在正确的位置（防水）
+
+
+        .. image:: /_static/images/tutorials/poe/factoryReset.png
+    
+    .. tab:: 二代OAK-POE
+
+        `本文档 <https://www.oakchina.cn/2022/08/11/poe-m8/>`__  介绍如何为二代OAK-POE 设备执行出厂重置。请注意，您将需要一块OAK 编程板。
+
 
 .. include::  /pages/includes/footer-short.rst

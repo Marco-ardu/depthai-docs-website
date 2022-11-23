@@ -11,7 +11,7 @@ RUN apt-get update \
     && apt-get clean 
 
 RUN python3 -m pip install -U pip -i https://pypi.tuna.tsinghua.edu.cn/simple \
-    && python3 -m pip install sphinx sphinx-rtd-theme requests -i https://pypi.tuna.tsinghua.edu.cn/simple
+    && python3 -m pip install sphinx sphinx-rtd-theme sphinx-tabs requests -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 RUN useradd -ms /bin/bash ubuntu
 USER ubuntu
