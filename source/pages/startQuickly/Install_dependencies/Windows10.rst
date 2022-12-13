@@ -38,6 +38,16 @@ Windows 10/11
 .. note:: 
 
     这个安装包的depthai版本版本号是2.19.0.0，更新时间2022-11-03。部分示例可能会在gitee上不定期更新，最新示例请在 `此处 <https://gitee.com/oakchina/depthai-experiments>`_ 查看。
+    由于当前2.19.0版本无法连接静态POE，需要手动升级depthai
+
+    .. code-block:: bash
+
+        cd /d %DEPTHAI_HOME%\depthai
+        depthai_demo_python\python.exe pip install -U depthai
+        
+        cd /d %DEPTHAI_HOME%
+        python\python.exe pip install -U depthai
+
 
 安装
 ^^^^^^^^^^^
