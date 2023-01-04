@@ -479,7 +479,7 @@ OAK官方英文原版使用文档： `查看 <https://docs.luxonis.com/en/latest
 
    pages/Advanced/Supported-Formats.rst
    pages/Advanced/download.rst
-   pages/Advanced/convert.rst
+   pages/Advanced/local_convert_openvino.rst
    pages/Advanced/Neural-networks.rst
    pages/Advanced/slam.rst
    pages/Advanced/ros.rst
@@ -493,7 +493,7 @@ OAK官方英文原版使用文档： `查看 <https://docs.luxonis.com/en/latest
    :hidden:
    :caption: 高阶OAK玩法
 
-   pages/HighLevel/High_level.rst
+   pages/HighLevel/on-device-programming.rst
 
 .. .. toctree::
 ..    :maxdepth: 1

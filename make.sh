@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ $1 = "build" ];
+if [ $1 = "html" ];
 then
     rm -rf build
     docker run --rm -i -v ${PWD}:/build --name main_build  depthai_main_build:1.1 make html

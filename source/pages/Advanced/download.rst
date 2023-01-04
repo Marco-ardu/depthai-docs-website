@@ -4,10 +4,10 @@
 .. toctree::
     :glob:
     
-    ./downloadModel.rst
-    ./pretrained_openvino.rst
-    ./ai_ml_nn_all.rst
-    ./cv.rst
+    ./Download/downloadModel.rst
+    ./Download/pretrained_openvino.rst
+    ./Download/ai_ml_nn_all.rst
+    ./Download/cv.rst
 
 
 
