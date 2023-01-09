@@ -94,7 +94,7 @@ function addNavbar() {
                   </svg>
               </a></div>
               <div class="drop-content">
-                  <a href="https://www.oakchina.cn/about-us/>关于我们</a>
+                  <a href="https://www.oakchina.cn/about-us/">关于我们</a>
                   <a href="https://www.oakchina.cn/contact-us/">联系方式</a>
                   <a href="https://www.oakchina.cn/usercases/">客户案例</a>
                   <a href="https://www.oakchina.cn/customized/">定制服务</a>
