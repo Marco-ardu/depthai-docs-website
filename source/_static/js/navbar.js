@@ -81,14 +81,27 @@ function addNavbar() {
           </div>
 
           <div class="drop-menu" id="drop-menu">
-              <div class="hover-btn"><a href="https://www.oakchina.cn/blog/">文章</a></div>
+              <div class="hover-btn"><a href="https://www.oakchina.cn/blog/">博客</a></div>
           </div>
 
           <div class="drop-menu" id="drop-menu">
               <div class="hover-btn"><a href="https://www.oakchina.cn/shop/">购买</a></div>
           </div>
+          <div class="drop-menu" onmouseover="up(this)" onmouseout="down(this)" id="drop-menu">
+              <div class="hover-btn"><a>联系我们
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                      <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg>
+              </a></div>
+              <div class="drop-content">
+                  <a href="https://www.oakchina.cn/about-us/>关于我们</a>
+                  <a href="https://www.oakchina.cn/contact-us/">联系方式</a>
+                  <a href="https://www.oakchina.cn/usercases/">客户案例</a>
+                  <a href="https://www.oakchina.cn/customized/">定制服务</a>
+              </div>
+          </div>
           <div class="drop-menu" id="drop-menu">
-              <div class="hover-btn"><a href="https://www.oakchina.cn/contact-us/">联系我们</a></div>
+              <div class="hover-btn"><a href="https://www.oakchina.cn/download/">下载中心</a></div>
           </div>
       </div> 
   </div>

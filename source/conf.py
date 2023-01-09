@@ -19,7 +19,7 @@ import requests
 # -- Project information -----------------------------------------------------
 
 project = 'DepthAI Docs'
-copyright = '2022, Arducam'
+copyright = '2023, Arducam'
 author = 'Arducam'
 
 # The full version, including alpha/beta/rc tags
