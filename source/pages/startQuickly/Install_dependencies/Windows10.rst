@@ -43,10 +43,10 @@ Windows 10/11
     .. code-block:: bash
 
         cd /d %DEPTHAI_HOME%\depthai
-        depthai_demo_python\python.exe pip install -U depthai
+        depthai_demo_python\python.exe -m pip install -U depthai
         
         cd /d %DEPTHAI_HOME%
-        python\python.exe pip install -U depthai
+        python\python.exe -m pip install -U depthai
 
 
 安装
