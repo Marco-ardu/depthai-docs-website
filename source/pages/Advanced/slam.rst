@@ -3,7 +3,7 @@
 
 .. note:: 
 
-  可以参考以下链接（ `Python <https://gitee.com/oakchina/depthai-python/blob/main/examples/StereoDepth/depth_post_processing.py#L39-49>`__  `C++ <https://gitee.com/oakchina/depthai-core/blob/main/examples/StereoDepth/depth_post_processing.cpp#L38-48>`__ ）中的代码对深度图进行后处理，过多的后处理也会造成帧率下降 
+  可以参考以下链接（ `Python <https://gitee.com/oakchina/depthai-python/blob/main/examples/StereoDepth/depth_post_processing.py#L39-49>`__  `C++ <https://gitee.com/oakchina/depthai-core/blob/main/examples/StereoDepth/depth_post_processing.cpp#L38-48>`__ ）中的代码对深度图进行后处理，过多的后处理会造成帧率下降， `深度节点配置API <https://docs.oakchina.cn/projects/api/components/nodes/stereo_depth.html#currently-configurable-blocks>`__
 
 .. list-table:: 
   :widths: 5 10 10
