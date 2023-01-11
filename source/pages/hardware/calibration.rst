@@ -163,8 +163,8 @@
 
 匹配叠加多边形的方向，然后按[SPACEBAR]捕获图像。棋盘格图案不需要与多边形完全匹配，但是将多边形用作相对于摄影机的角度和位置的准则很重要。有 13 个必需的多边形位置。
 
-在捕获了所有多边形位置的图像之后，校准图像处理步骤将开始。如果成功，将在创建校准文件 :code:`depthai/resources/depthai.calib`.
-默认情况下，此文件是通过中的 :code:`calib_fpath` 变量加载的 :code:`consts/resource_paths.py`.
+在捕获了所有多边形位置的图像之后，校准图像处理步骤将开始。如果成功，将创建校准文件 :code:`depthai/resources/<Device Mx ID>.json`.
+默认情况下
 
 它还将在 :code:`depthai/resources/` 文件夹下创建网格文件命名为 :code:`left_mesh.calib` 和 :code:`right_mesh.calib` ， 可用于克服双目相机模块的扭曲与变形。
 
