@@ -85,6 +85,10 @@ depthai-experiments     一些实验性模型示例
 运行depthai_demo
 ^^^^^^^^^^^
 
+.. note:: 
+
+    GUI界面的参数说明请 `查看 <https://www.oakchina.cn/2022/12/15/depthai_first_steps/#i-2>`__
+
 在确认使用USB3.0连接设备后双击桌面的OAK USB3.0 Demo即可运行depthai_demo。
 
 .. image:: /_static/images/GetStartedQuickly/oak_demo.png
