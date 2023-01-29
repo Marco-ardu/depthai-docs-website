@@ -16,38 +16,46 @@ Windows 10/11
     <br/>
 
 
-下载安装程序
+下载安装程序(此处可以选择不同平台下载)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **百度网盘**:
 
     =======  ================================================================  ======
     平台      链接                                                               密码
     =======  ================================================================  ======
-    Windows  https://pan.baidu.com/share/init?surl=DD_ZpOxLsh0gaaiyOhzxkg       va4q
+    Windows  https://pan.baidu.com/s/1db8hm3YK1WsNNR8AdtfYVg                    sbub
     =======  ================================================================  ======
 
 **sourceforge**: 
 
-    地址：https://sourceforge.net/projects/depthai/
+    =======  ==========================================
+    平台      链接                                                  
+    =======  ==========================================
+    Windows  https://sourceforge.net/projects/depthai/ 
+    =======  ==========================================
 
-    此处可以选择不同平台下载:
-
-    .. image:: /_static/images/GetStartedQuickly/sourceforge.png
-        :alt: sourceforge
 
 .. note:: 
 
-    这个安装包的depthai版本版本号是2.19.0.0，更新时间2022-11-03。部分示例可能会在gitee上不定期更新，最新示例请在 `此处 <https://gitee.com/oakchina/depthai-experiments>`_ 查看。
-    由于当前2.19.0版本无法连接静态POE，需要手动升级depthai
+    这个安装包的depthai版本版本号是2.19.1.0，更新时间2023-01-29。部分示例可能会在gitee上不定期更新，最新示例请在 `此处 <https://gitee.com/oakchina/depthai-experiments>`_ 查看。
+    手动升级depthai使用以下命令
 
     .. code-block:: bash
 
-        cd /d %DEPTHAI_HOME%\depthai
-        depthai_demo_python\python.exe -m pip install -U depthai
-        
         cd /d %DEPTHAI_HOME%
-        python\python.exe -m pip install -U depthai
+        .\python\python.exe -m pip install -U depthai
 
+安装包内容
+^^^^^^^^^^^^^^^^^^^^
+
+=====================  ===============================================
+文件夹目录               内容
+=====================  ===============================================
+depthai                 depthai_demo以及校准程序
+depthai_API_examples    API相关示例
+depthai-experiments     一些实验性模型示例
+=====================  ===============================================
 
 安装
 ^^^^^^^^^^^
@@ -76,23 +84,21 @@ Windows 10/11
 
 .. image:: /_static/images/GetStartedQuickly/success.png
 
-运行depthai_demo.py
+运行depthai_demo
 ^^^^^^^^^^^
 
-在确认使用USB3.0连接设备后双击桌面的OAK USB3.0 Demo即可运行depthai_demo.py。
+在确认使用USB3.0连接设备后双击桌面的OAK USB3.0 Demo即可运行depthai_demo。
 
 .. image:: /_static/images/GetStartedQuickly/oak_demo.png
 
 .. image:: /_static/images/GetStartedQuickly/depthaiDemoShow.png
 
-命令行运行depthai_demo.py:
-
-我们为depthai_demo.py单独制作了一个Python环境，这个环境也可以用来校准
+命令行运行depthai_demo:
 
 .. code-block:: bash
 
-    cd /d %DEPTHAI_HOME%\depthai
-    depthai_demo_python\python.exe depthai_demo.py
+    cd /d %DEPTHAI_HOME%
+    .\python\python.exe .\depthai\depthai_demo.py --skipVersionCheck
 
 .. image:: /_static/images/GetStartedQuickly/depthaiDemoCmdShow.png
 
@@ -112,6 +118,23 @@ Windows 10/11
 
     如果下载太慢，您可以将用户目录下的.cache文件夹中blobconverter文件夹复制到上面代码中所指定的文件夹中。
 
+
+运行API示例
+^^^^^^^^^^^
+
+.. code-block:: bash
+    
+    cd /d %DEPTHAI_HOME%
+    .\python\python.exe .\depthai_API_examples\ColorCamera\rgb_preview.py
+
+运行depthai-experiments示例
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+    
+    cd /d %DEPTHAI_HOME%
+    .\python\python.exe depthai-experiments/gen2-age-gender/main.py
+
 运行校准程序
 ^^^^^^^^^^^
 
@@ -129,49 +152,15 @@ Windows 10/11
 
 .. code-block:: bash
 
-    cd /d %DEPTHAI_HOME%\depthai
-    depthai_demo_python\python.exe calibrate.py -s 2.5 -db -brd BW1098OBC
-
-cam_test.py
-^^^^^^^^^^^
-
-在2.19.0版本之后，depthai-python增加了cam_test.py实用程序，路径为 **depthai-python\\utilities\\**
-
-.. code-block:: bash
-
     cd /d %DEPTHAI_HOME%
-    python\python.exe depthai-python\utilities\cam_test.py -h
-
-.. image:: /_static/images/GetStartedQuickly/camTestHelp.png
-
-以下使用的设备是OAK-FFC-4P 4目OV9782
-
-.. code-block:: bash
-
-    python\python.exe depthai-python\utilities\cam_test.py -cams rgb,c left,c right,c camd,c -rs -cres 800
-
-.. image:: /_static/images/GetStartedQuickly/camTestShow.png
+    .\python\python.exe .\depthai\calibrate.py -s 2.5 -db -brd BW1098OBC --skipVersionCheck
 
 device_manager.exe
-^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
 
-在2.19.0版本之后，我们把device_manager.py打包成了exe程序，路径为 **depthai-python\\utilities\\** 可以直接点击运行
-
-.. image:: /_static/images/GetStartedQuickly/device_manager.png
+在2.19.0版本之后，我们把device_manager.py打包成了exe程序，在 **depthai_API_examples** 目录下，可以直接点击运行
 
 .. image:: /_static/images/GetStartedQuickly/device_manager_show.png
-
-运行API示例
-^^^^^^^^^^^
-
-.. code-block:: bash
-    
-    cd /d %DEPTHAI_HOME%
-    python\python.exe depthai-python\examples\ColorCamera\rgb_preview.py
-
-我们还准备了许多应用示例在depthai-experiments文件夹中。
-
-.. image:: /_static/images/GetStartedQuickly/depthaiExperiments.png
 
 Windows 7
 ----------
