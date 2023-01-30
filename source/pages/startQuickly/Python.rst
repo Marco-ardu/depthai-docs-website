@@ -26,14 +26,13 @@ depthai项目链接
 
     新版 depthai 项目 需要 python3.8 及以上版本
 
-===================  ===============================================
-项目                  链接
-===================  ===============================================
-depthai               https://gitee.com/oakchina/depthai
-depthai-python        https://gitee.com/oakchina/depthai-python
-depthai-experiments   https://gitee.com/oakchina/depthai-experiments
-===================  ===============================================
 
-
+===================  ===============================================  ==========================
+项目                  链接                                              内容
+===================  ===============================================  ==========================
+depthai               https://gitee.com/oakchina/depthai                depthai_demo以及校准程序
+depthai-python        https://gitee.com/oakchina/depthai-python         examples中有API相关示例
+depthai-experiments   https://gitee.com/oakchina/depthai-experiments    一些实验性模型示例
+===================  ===============================================  ==========================
 
 .. include::  /pages/includes/footer-short.rst
