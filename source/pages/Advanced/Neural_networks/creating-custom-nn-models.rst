@@ -1,5 +1,5 @@
 在设备上运行您自己的CV模型
-==========================
+------------------------------
 
 正如在 :ref:`设备上编程` 中提到的，您可以使用您最喜欢的NN库创建 **自定义CV模型** ，将其转换并编译为 :code:`.blob` 并在设备上运行。本教程将介绍如何做到这一点。
 
@@ -14,7 +14,7 @@
 - `Harris corner detection in PyTorch <https://github.com/kunaltyagi/pytorch_harris/>`__ by Kunal Tyagi
 
 使用PyTorch创建自定义模型
-***************************
+^^^^^^^^^^^
 
 **TL;DR** 如果您对实现代码感兴趣，请 `点击此处 <https://gitee.com/oakchina/depthai-experiments/blob/master/gen2-custom-models/generate_model/pytorch_concat.py>`__ 。
 
@@ -96,7 +96,7 @@
     您现在可以将 :code:`.blob` 模型与 `NeuralNetwork <https://docs.oakchina.com/projects/api/en/latest/components/nodes/neural_network/>`__ 节点一起使用。浏览 `depthai-experiments/custom-models <https://gitee.com/oakchina/depthai-experiments/tree/master/gen2-custom-models>`__ 以运行使用这些自定义模型的演示应用程序。
 
 Kornia
-********
+^^^^^^^^^^^
 
 `Kornia <https://kornia.readthedocs.io/en/latest/>`__ , “State-of-the-art and curated Computer Vision algorithms for AI.”, 有 **一组在PyTorch中实现的通用计算机视觉算法 ** 。这允许用户执行类似的操作：
 
@@ -117,7 +117,7 @@ Kornia
     在我们的测试中，我们发现 **一些算法** 既不支持OpenVINO框架，也不支持VPU。我们已经为 `Sobel过滤器 <https://kornia.readthedocs.io/en/latest/filters.html?highlight=sobel#kornia.filters.Sobel>`__ 提交了一个 `问题 <https://github.com/openvinotoolkit/openvino/issues/7557>`__ 。
 
 部署参考的API示例
-===========================
+------------------------------
 
 `官方参考链接 <https://docs.oakchina.cn/projects/api/components/nodes/neural_network.html>`__
 

@@ -6,7 +6,7 @@
 
     ./model_conversion.rst
 
-自定义神经网络模型训练
+用户自定义神经网络模型训练和部署
 =========================
 
 使用Docker训练Yolov3/Yolov4

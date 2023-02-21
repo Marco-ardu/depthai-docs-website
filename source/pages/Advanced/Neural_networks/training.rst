@@ -1,8 +1,8 @@
 自定义训练
-===============
+------------------------------
 
 概述
-*************
+^^^^^^^^^^^
 
 在我们的 Github 存储库 `depthai-ml-training <https://github.com/luxonis/depthai-ml-training>`__ 中，我们提供了几个在各种数据集上训练的ML训练笔记本. 您可以在 `Google Colab <https://colab.research.google.com/notebooks/intro.ipynb>`__ 上运行这些笔记本-它们提供免费的CPU/GPU实例，非常适合原型设计甚至简单的生产模型。
 

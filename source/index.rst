@@ -443,9 +443,9 @@ OAK官方英文原版使用文档： `查看 <https://docs.luxonis.com/en/latest
    pages/hardware/Product-model-explanation.rst
    pages/hardware/Connection-considerations.rst
    pages/hardware/Tutorials.rst
+   pages/hardware/other.rst
    pages/hardware/calibration.rst
    pages/hardware/other/waterproof.rst
-   pages/hardware/other.rst
 
 
 .. toctree::
@@ -456,6 +456,7 @@ OAK官方英文原版使用文档： `查看 <https://docs.luxonis.com/en/latest
 
    pages/startQuickly/Python.rst
    pages/startQuickly/C++.rst
+   pages/startQuickly/scrarch.rst
    pages/startQuickly/MirrorAcceleration.rst
    pages/startQuickly/usePycharm.rst
 
@@ -466,10 +467,10 @@ OAK官方英文原版使用文档： `查看 <https://docs.luxonis.com/en/latest
    :hidden:
    :caption: 基础OAK玩法
 
-   pages/Basic/Helloworld.rst
-   pages/Basic/gen2-api.rst
-   pages/Basic/Basic.rst
-   pages/Basic/applicationExample.rst
+   Hello Word程序讲解 <https://docs.oakchina.cn/projects/api/tutorials/hello_world.html>
+   Depthai API示例程序 <https://docs.oakchina.cn/projects/api/tutorials/code_samples.html>
+   Depthai API文档详解 <https://docs.oakchina.cn/projects/api/>
+   Depthai 项目应用示例 <https://gitee.com/oakchina/depthai-experiments/tree/master>
 
 .. toctree::
    :maxdepth: 1
@@ -477,15 +478,9 @@ OAK官方英文原版使用文档： `查看 <https://docs.luxonis.com/en/latest
    :hidden:
    :caption: 进阶OAK玩法
 
-   pages/Advanced/Supported-Formats.rst
-   pages/Advanced/download.rst
-   pages/Advanced/local_convert_openvino.rst
    pages/Advanced/Neural-networks.rst
-   pages/Advanced/slam.rst
-   pages/Advanced/ros.rst
-   pages/Advanced/oak-slam.rst
-   pages/Advanced/scrarch.rst
-   pages/Advanced/portabletool.rst
+   pages/Advanced/CV.rst
+   3D人工智能相关教程 <https://docs.luxonis.com/en/latest/pages/spatial-ai/#>
 
 .. toctree::
    :maxdepth: 1
@@ -493,16 +488,10 @@ OAK官方英文原版使用文档： `查看 <https://docs.luxonis.com/en/latest
    :hidden:
    :caption: 高阶OAK玩法
 
+   pages/HighLevel/ros.rst
+   pages/HighLevel/oak-slam.rst
    pages/HighLevel/on-device-programming.rst
 
-.. .. toctree::
-..    :maxdepth: 1
-..    :numbered: 3
-..    :hidden:
-..    :caption: 文章
-
-..    文章地址 <https://www.oakchina.cn/blog/>
-..    pages/link.rst
 
 .. toctree::
    :maxdepth: 1

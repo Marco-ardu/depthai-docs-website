@@ -1,4 +1,4 @@
-SLAM 与 OAK
+OAK和SLAM相关示例
 #############
 
 目前luxonis官方并没有做VIO以及SLAM相关的应用支持，在即将发布的第三代相机，他们将会有开源的SLAM实现

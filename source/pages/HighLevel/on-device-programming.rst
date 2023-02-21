@@ -29,4 +29,7 @@
 - `关于如何 <https://docs.openvino.ai/2021.1/openvino_docs_IE_DG_Extensibility_DG_VPU_Kernel.html>`__ 通过OpenVINO使用OpenCL实现自定义层的教程。
 - `OpenCL中的自定义内核实现 <https://github.com/openvinotoolkit/openvino/tree/2021.4.2/inference-engine/src/vpu/custom_kernels>`__ 。
 
+`Poe独立运行模式 <https://www.oakchina.cn/2022/08/27/oak-poe-standalone/>`__
+****************************************************************************************
+
 .. include::  /pages/includes/footer-short.rst

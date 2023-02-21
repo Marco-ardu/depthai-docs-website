@@ -1,5 +1,9 @@
-自定义神经网络模型转换
+
+用户自定义神经网络模型训练和部署
 ===========================
+
+自定义神经网络模型转换
+------------------------------
 
 要允许 DepthAI 使用您的自定义训练模型，您需要将它们转换为 MyriadX blob 文件格式 - 以便它们针对 MyriadX VPU 处理器上的最佳推理进行优化。
 
@@ -16,7 +20,7 @@
 请在下面找到有关如何使用不同方法执行这些步骤的说明。
 
 本地编译
-*****************
+^^^^^^^^^^^
 
 如果要进行模型转换和编译，可以按照:
 
@@ -26,14 +30,14 @@
 - `自定义模型转换&编译注意事项 <https://github.com/luxonis/depthai/blob/main/README.md#conversion-of-existing-trained-models-into-intel-movidius-binary-format>`__
 
 使用 Google Colab
-******************
+^^^^^^^^^^^
 
 您还可以使用 Google Colab notebook 训练和转换模型。 您可以查看我们的 :ref:`自定义训练` 教程, 其中每个教程还包含直接在 notebook 中执行的转换和编译步骤。
 
 带有编译步骤的示例笔记本在 `这里 <https://colab.research.google.com/github/luxonis/depthai-ml-training/blob/master/colab-notebooks/Easy_Object_Detection_With_Custom_Data_Demo_Training.ipynb#scrollTo=_PlfZAR1OCK2>`__ 。
 
 使用在线转换器
-**********************
+^^^^^^^^^^^
 
 您还可以访问我们的 `MyriadX Blob converter <http://blobconverter.luxonis.com/>`__
 这个在线模型转换器允许指定不同的OpenVINO目标版本并支持 **TensorFlow, Caffe, OpenVINO IR 和 OpenVINO Model Zoo** 的转换。
@@ -42,7 +46,7 @@
   :alt: BlobConverter Web
 
 使用 blobconverter 库
-***************************
+^^^^^^^^^^^
 
 为了能够让用户自动使用我们的 blobconverter 工具，我们发布了一个 `blobconverter PyPi 库 <https://pypi.org/project/blobconverter/>`__,
 它允许直接从命令行和 Python 脚本编译 MyriadX blob。
@@ -50,7 +54,7 @@
 安装和使用说明可以在 `这里 <https://github.com/luxonis/blobconverter/tree/master/cli>`__ 找到。
 
 故障排除
-###############
+------------------------------
 
 将模型转换为 OpenVINO 格式或将其编译为 :code:`.blob`, 你可能会遇到一个问题。 这通常意味着 **不支持两层之间的连接** 或 **不支持该层**.
 
@@ -61,12 +65,12 @@
 
 
 支持的层
-****************
+^^^^^^^^^^^
 
 将您的模型转换为 OpenVINO 的 IR 格式 (:code:`.bin` 和 :code:`.xml`)时, 您必须检查 OpenVINO 是否支持所使用的层。 下面是支持层和它们的局限性 `Caffee <https://docs.openvinotoolkit.org/latest/openvino_docs_MO_DG_prepare_model_Supported_Frameworks_Layers.html#caffe_supported_layers>`__, `MXNet <https://docs.openvinotoolkit.org/latest/openvino_docs_MO_DG_prepare_model_Supported_Frameworks_Layers.html#mxnet_supported_symbols>`__, `TensorFlow <https://docs.openvinotoolkit.org/latest/openvino_docs_MO_DG_prepare_model_Supported_Frameworks_Layers.html#tensorflow_supported_operations>`__, `TensorFlow 2 Keras <https://docs.openvinotoolkit.org/latest/openvino_docs_MO_DG_prepare_model_Supported_Frameworks_Layers.html#tensorflow_2_keras_supported_operations>`__, `Kaldi <https://docs.openvinotoolkit.org/latest/openvino_docs_MO_DG_prepare_model_Supported_Frameworks_Layers.html#kaldi_supported_layers>`__, and `ONNX <https://docs.openvinotoolkit.org/latest/openvino_docs_MO_DG_prepare_model_Supported_Frameworks_Layers.html#onnx_supported_operators>`__.
 
 不支持的图层类型"layer_type"
-***********************************
+^^^^^^^^^^^
 
 当使用 `compile_tool <https://docs.openvinotoolkit.org/latest/openvino_inference_engine_tools_compile_tool_README.html>`__ 从 IR (.xml/.bin) 编译成.blob时，你可能会得到这样的错误:
 
@@ -79,7 +83,7 @@
 
 
 数据类型不正确
-********************
+^^^^^^^^^^^
 
 如果编译器返回类似 **"check error: input #0 has type S32, but one of [FP16] is expected"**,
 则意味着您使用了不正确的数据类型。 在上面的例子中，一个 INT32 层直接连接到 FP16。
@@ -88,13 +92,17 @@
 层来做到这一点。 您可以在此 `discord thread <https://discord.com/channels/790680891252932659/799407361986658354/854501905799184414>`__ 上找到更多信息。
 
 Yolov5 6.0 转换成blob格式
-=======================
+------------------------------
 
 `链接 <https://www.oakchina.cn/2022/01/22/yolov5-blob/>`__
 
 在线将YOLOV5转化成OAK能用的模型格式
-=======================
+------------------------------
 
 `链接 <https://tools.luxonis.com/>`__
+
+.. include::  ./training.rst
+
+.. include::  ./creating-custom-nn-models.rst
 
 .. include::  /pages/includes/footer-short.rst
