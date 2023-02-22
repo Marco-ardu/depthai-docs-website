@@ -22,6 +22,6 @@ depthai core c++安装包 `下载地址 <https://gitee.com/oakchina/depthai-core
 ROS相关
 ###################
 
-:ref:`链接 <ROS示例>`
+:ref:`链接 <OAK和ROS相关教程>`
 
 .. include::  /pages/includes/footer-short.rst
