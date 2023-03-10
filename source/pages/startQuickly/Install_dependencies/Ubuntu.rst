@@ -38,7 +38,7 @@ Ubuntu
     cd depthai
     python3 install_requirements.py
 
-如果安装依赖遇到网络问题可以查看此处换成 :ref:`国内镜像源 <镜像加速>` 
+如果安装依赖遇到网络问题可以查看此处换成 :ref:`国内镜像源 <安装文件镜像加速>` 
 
 - 运行Demo
 
