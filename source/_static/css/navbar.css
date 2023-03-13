@@ -133,7 +133,7 @@ div[role=search] {
 
 .menu_list{
     display: flex;
-    padding-left: 64%;
+    padding-left: 40%;
     vertical-align: middle;
 }
 
