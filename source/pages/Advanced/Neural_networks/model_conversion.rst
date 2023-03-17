@@ -103,6 +103,5 @@ Yolov5 6.0 转换成blob格式
 
 .. include::  ./training.rst
 
-.. include::  ./creating-custom-nn-models.rst
 
 .. include::  /pages/includes/footer-short.rst
