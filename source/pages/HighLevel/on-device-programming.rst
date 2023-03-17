@@ -32,6 +32,6 @@
 `Poe独立运行模式 <https://www.oakchina.cn/2022/08/27/oak-poe-standalone/>`__
 ****************************************************************************************
 
-.. include::  ./creating-custom-nn-models.rst
+.. include::  /pages/HighLevel/creating-custom-nn-models.rst
 
 .. include::  /pages/includes/footer-short.rst
