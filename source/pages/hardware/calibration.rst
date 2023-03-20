@@ -48,6 +48,8 @@
 
 #. 打印棋盘格校准图像。
 
+    `此链接下载PDF <https://gitee.com/oakchina/depthai/raw/main/charuco_11x8.pdf>`__
+
     将校准棋盘格打印在平坦的表面上，或者将棋盘格显示在平坦的显示器上(不要弯曲！)。请注意，如果您确实要打印校准目标，请确保将其固定在平坦的表面上并且没有褶皱或“波浪”。
 
     通常，使用监视器显示校准目标更加容易/快捷。
@@ -187,11 +189,6 @@
     python3 depthai_demo.py
 
   该脚本将启动一个窗口，启动摄像头，并显示深度视频流:
-
-  .. image:: /_static/images/calibration/calibration-depth.png
-    :alt: Depth projection
-
-  在上面的屏幕截图中，手靠近相机。
 
 
 .. include::  /pages/includes/footer-short.rst
