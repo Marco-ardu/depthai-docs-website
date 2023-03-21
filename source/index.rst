@@ -498,8 +498,7 @@ OAK官方英文原版使用文档： `查看 <https://docs.luxonis.com/en/latest
    :numbered: 3
    :hidden:
    :caption: 问题答疑
-
-   主要问题解答 <https://www.oakchina.cn/tech-faq/>
+   
    pages/Q&A/faq.rst
    故障排除 <https://www.oakchina.cn/faq/>
    pages/Q&A/support.rst
