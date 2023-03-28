@@ -10,6 +10,6 @@ OAK-D-IOT-40
 其中 **MICRO USB** 用于 **ESP32** 数据传输。
 
 .. note::
-    连接设备之后查看以下必看文档 :ref:`IoT系列入门必看 <IoT系列入门必看>`
+    连接设备之后查看以下必看文档 :ref:`IoT系列入门必看 <IoT系列入门必看（已停产）>`
 
 .. include::  /pages/includes/footer-short.rst
