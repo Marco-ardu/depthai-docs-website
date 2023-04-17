@@ -69,7 +69,7 @@
 
     参数参考:
 
-    - :code:`-s SQUARE_SIZE_IN_CM`, :code:`--square_size_cm SQUARE_SIZE_IN_CM`: 以厘米为单位测量印刷棋盘格的平方大小。
+    - :code:`-s SQUARE_SIZE_IN_CM`, :code:`--square_size_cm SQUARE_SIZE_IN_CM`: 以厘米为单位测量印刷棋盘格的黑色正方形边长。
     - :code:`-db`, :code:`--defaultBoard` : 指定我们正在使用的depthai存储库中提供的校准版的标志。如果您使用其他板，请将 :code:`-ms MARKER_SIZE_IN_CM`, :code:`--markerSizeCm MARKER_SIZE_IN_CM` 参数改为charuco板子上标记的尺寸，以厘米为单位。
     - :code:`-brd BOARD`, :code:`--board BOARD`: BW1097，BW1098OBC-资源/面板/中的面板类型(不区分大小写)。或自定义.json板配置的路径。与[-fv -b -w]互斥，可以手动指定视场，基线和相机方向（已交换或未交换）。
 
