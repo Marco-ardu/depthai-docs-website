@@ -457,6 +457,7 @@ OAK官方英文原版使用文档： `查看 <https://docs.luxonis.com/en/latest
    pages/startQuickly/Python.rst
    pages/startQuickly/C++.rst
    pages/startQuickly/scrarch.rst
+   pages/startQuickly/Android.rst
    pages/startQuickly/MirrorAcceleration.rst
    pages/startQuickly/usePycharm.rst
 
