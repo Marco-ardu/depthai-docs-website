@@ -3,7 +3,8 @@ PoE系列入门必看
 
 .. note::
 
-    `POE设备入门指南 <https://www.oakchina.cn/2021/12/16/oak-poe-user-guide/>`__ 
+    `POE设备入门指南 <https://www.oakchina.cn/2021/12/16/oak-poe-user-guide/>`__
+    `OAK-PoE系列M8接口及M12接口使用说明 <https://www.oakchina.cn/2022/08/11/poe-m8/>`__
 
 本教程适用的设备可在 `这里 <https://www.oakchina.cn/product-category/oak-poe/>`__ 查看。
 
