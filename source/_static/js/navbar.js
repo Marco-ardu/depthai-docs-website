@@ -110,6 +110,7 @@ function addNavbar() {
     <div class="lux-navbar">
       <ul>
         <li><a href="/en/latest/" class="lux-navbar-active-">Main</a></li>
+        <li><a href="/projects/sdk/" >SDK</a></li>
         <li><a href="/projects/api/" >API</a></li>
       </ul>
     </div>
