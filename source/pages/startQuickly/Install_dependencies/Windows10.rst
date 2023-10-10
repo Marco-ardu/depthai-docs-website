@@ -30,13 +30,20 @@ Windows 10/11
 
 .. note:: 
 
-    这个安装包的depthai版本版本号是2.22.0.0，更新时间2023-06-30。部分示例可能会在gitee上不定期更新，最新示例请在 `此处 <https://gitee.com/oakchina/depthai-experiments>`_ 查看。
-    手动升级depthai使用以下命令
+    这个安装包的depthai版本版本号是2.22.0.0，更新时间2023-06-30。部分示例可能会在 gitee 上不定期更新，最新示例请在 `此处 <https://gitee.com/oakchina/depthai-experiments>`_ 查看。
+    手动升级 depthai 使用以下命令
 
     .. code-block:: bash
 
         cd /d %DEPTHAI_HOME%
         .\python\python.exe -m pip install -U depthai
+
+    指定版本下载 depthai 使用以下命令，例如 depthai==2.23.0.0
+
+    .. code-block:: bash
+
+        cd /d %DEPTHAI_HOME%
+        .\python\python.exe -m pip install -U depthai==2.23.0.0
 
 安装包内容
 ^^^^^^^^^^^^^^^^^^^^
