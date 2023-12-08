@@ -48,7 +48,7 @@
 
 #. 打印棋盘格校准图像。
 
-    `此链接下载PDF <https://gitee.com/oakchina/depthai/raw/main/charuco_11x8.pdf>`__
+    `此链接下载PDF <https://gitee.com/oakchina/depthai/blob/main/charuco_11_8.pdf>`__
 
     将校准棋盘格打印在平坦的表面上，或者将棋盘格显示在平坦的显示器上(不要弯曲！)。请注意，如果您确实要打印校准目标，请确保将其固定在平坦的表面上并且没有褶皱或“波浪”。
 
