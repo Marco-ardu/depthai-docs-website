@@ -444,8 +444,8 @@ OAK官方英文原版使用文档： `查看 <https://docs.luxonis.com/en/latest
    pages/hardware/Connection-considerations.rst
    pages/hardware/Tutorials.rst
    pages/hardware/other.rst
-   pages/hardware/calibration.rst
    pages/hardware/other/waterproof.rst
+   相机校准标定 <https://www.oakchina.cn/2024/01/10/2024calibration/>
 
 
 .. toctree::
