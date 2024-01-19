@@ -1,6 +1,10 @@
 windows
 ==========================
 
+.. note:: 
+
+    如果你用的型号是OAK-D-SR，请先查看这个 `注意事项 <https://gitee.com/oakchina/depthai-experiments>`_ ！
+
 Windows 10/11
 ----------
 
