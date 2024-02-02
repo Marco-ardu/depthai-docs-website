@@ -42,7 +42,7 @@ Windows 10/11
 
 .. note:: 
 
-    这个安装包的depthai版本版本号是2.22.0.0，更新时间2023-06-30。部分示例可能会在 gitee 上不定期更新，最新示例请在 `此处 <https://gitee.com/oakchina/depthai-experiments>`_ 查看。
+    这个安装包的depthai版本版本号是2.24.0.0，更新时间2023-12-21。部分示例可能会在 gitee 上不定期更新，最新示例请在 `此处 <https://gitee.com/oakchina/depthai-experiments>`_ 查看。
     手动升级 depthai 使用以下命令
 
     .. code-block:: bash
@@ -173,7 +173,7 @@ depthai-experiments     一些实验性模型示例
 device_manager.exe
 ^^^^^^^^^^^^^^^^^^^^^^
 
-在2.19.0版本之后，我们把device_manager.py打包成了exe程序，在 **depthai_API_examples** 目录下，可以直接点击运行
+我们把device_manager.py打包成了exe程序， `下载链接 <https://pan.baidu.com/s/1G9MbWmdFTmEExf27ROImKA>`__ 提取码: gkb3
 
 .. image:: /_static/images/GetStartedQuickly/device_manager_show.png
 
