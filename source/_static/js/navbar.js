@@ -34,7 +34,7 @@ function addNavbar() {
   <div class="navbar_menu">
       <div class="img">
           <a href="https://www.oakchina.cn/">
-              <img src="https://www.oakchina.cn/wp-content/uploads/2021/12/cropped-OAKChina-01.png" alt="ArduCam">
+              <img src="https://www.oakchina.cn/wp-content/uploads/2024/05/logo_2024.svg" alt="ArduCam">
           </a>
       </div>
       <div class="menu_list">
@@ -58,7 +58,7 @@ function addNavbar() {
           </a></div>
             <div class="drop-content">
                 <a href="https://docs.oakchina.cn/en/latest/">使用教程</a>
-                <a href="https://www.oakchina.cn/tech-faq/">问题排错</a>
+                <a href="https://www.oakchina.cn/faq/">常见问题</a>
                 <a href="https://www.oakchina.cn/oak-opensource-projects/">开源项目</a>
                 <a href="https://www.oakchina.cn/free-ai-model/">免费预训练模型</a>
                 <a href="https://www.oakchina.cn/free-courses/">视频教程</a>
