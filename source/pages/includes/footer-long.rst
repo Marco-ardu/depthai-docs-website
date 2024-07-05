@@ -37,7 +37,7 @@
    <div class="con-row con-row-short">
       <div class="con-box">
          <h5>售后技术支持</h5>
-         <img src="/_static/images/contact/oak_china_wechat_new.jpg" alt="oak_china_wechat_new"/>
+         <img src="/_static/images/contact/oak_china_wechat_new.png" alt="oak_china_wechat_new"/>
          <br/>
          <p class="con-title">企业微信：OAK中国</p>
       </div>
