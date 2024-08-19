@@ -38,7 +38,7 @@ DepthAI 能够运行 Zoo 中的许多对象检测模型。其中一些模型包�
 ################
 
 .. note::
-  DepthAI会在OpenVINO新版本发布后的几天内增加对OpenVINO新版本的支持， 所以 **建议您使用最新的OpenVINO版本** ，以下教程分2022.1 LTS和2021.4 LTS
+  OpenVINO 最新版本不支持OAK模型转换， **建议您使用OpenVINO 2022.1 LTS及以前的版本** ，以下教程分2022.1 LTS和2021.4 LTS
 
 2022.1 LTS
 *************
@@ -46,7 +46,7 @@ DepthAI 能够运行 Zoo 中的许多对象检测模型。其中一些模型包�
 安装OpenVINO Runtime
 """"""""""""""""""""""
 
-您可以从他们的 `下载页面 <https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/download.html>`__ 选择不同的平台下载OpenVINO Runtime，我们将使用最新版本-在撰写本文时为2022.1。
+您可以从他们的 `下载页面 <https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/download.html>`__ 选择不同的平台下载OpenVINO Runtime，我们支持2022.1 以前的版本。
 
 .. image:: /_static/images/tutorials/local_convert_openvino/OpenvinoRuntimeDownload.jpg
     :alt: OpenvinoRuntimeDownload
@@ -63,7 +63,7 @@ DepthAI 能够运行 Zoo 中的许多对象检测模型。其中一些模型包�
 
 安装OpenVINO Development Tools
 """"""""""""""""""""""""""""""""""""""""""""
-您可以从他们的 `下载页面 <https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/download.html>`__ 选择不同的平台下载OpenVINO Development Tools，我们将使用最新版本-在撰写本文时为2022.1。
+您可以从他们的 `下载页面 <https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/download.html>`__ 选择不同的平台下载OpenVINO Development Tools，我们支持2022.1 以前的版本。
 
 .. image:: /_static/images/tutorials/local_convert_openvino/OpenvinoDevDownload.jpg
     :alt: OpenvinoDevDownload
