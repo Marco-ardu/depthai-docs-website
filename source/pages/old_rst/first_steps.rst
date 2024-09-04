@@ -35,12 +35,12 @@
 
 .. note::
   如果您运行的是 Ubuntu 以外的其他操作系统，或者您认为出现问题，我们提供了详细的操作系统特定安装指南
-  `点击这里 <https://docs.luxonis.com/projects/api/en/latest/install/#supported-platforms>`__。
+  `点击这里 <https://docs-old.luxonis.com/projects/api/en/latest/install/#supported-platforms>`__。
 
 连接 OAK 设备 (PoE)
 ############################
 
-如果您使用的是 PoE 设备，请遵循 `OAK PoE 设备入门 <https://docs.luxonis.com/projects/hardware/en/latest/pages/guides/getting-started-with-poe.html>`__ 教程。
+如果您使用的是 PoE 设备，请遵循 `OAK PoE 设备入门 <https://docs-old.luxonis.com/projects/hardware/en/latest/pages/guides/getting-started-with-poe.html>`__ 教程。
 
 使用 Windows 安装程序
 #####################
@@ -862,7 +862,7 @@ Next steps
 
 - **Want to start coding?**
 
-  Be sure to check `hello world tutorial on API section <https://docs.luxonis.com/projects/api/en/latest/tutorials/hello_world/>`__ for a step-by-step introduction to the API
+  Be sure to check `hello world tutorial on API section <https://docs-old.luxonis.com/projects/api/en/latest/tutorials/hello_world/>`__ for a step-by-step introduction to the API
 
 - **Want to train and deploy a custom model to DepthAI?**
 

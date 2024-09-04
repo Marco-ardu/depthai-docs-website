@@ -295,7 +295,7 @@ DepthAI 与 OpenVINO 兼容吗？
 
 .. note::
 
-   `DepthAI Gen 2 <https://docs.luxonis.com/projects/api/en/gen2_develop/>`__ 支持 2020.1, 2020.2, 2020.3, 2020.4 和 2021.1。并且我们将竭尽全力支持新的OpenVINO版本。
+   `DepthAI Gen 2 <https://docs-old.luxonis.com/projects/api/en/gen2_develop/>`__ 支持 2020.1, 2020.2, 2020.3, 2020.4 和 2021.1。并且我们将竭尽全力支持新的OpenVINO版本。
 
 我能否在 DepthAI 上运行自己训练的模型？
 ###################################################################
@@ -529,7 +529,7 @@ DepthAI 可见的最小深度是多少？
 
   min_distance = focal_length * base_line_dist / 192
 
-对于 DepthAI 来说，灰度全球快门相机的 HFOV 是 73.5 度 (这可以在你的主板上找到，请看 `这里 <https://docs.luxonis.com/faq/#what-are-the-minimum-and-maximum-depth-visible-by-depthai>`__ ，所以焦距是
+对于 DepthAI 来说，灰度全球快门相机的 HFOV 是 73.5 度 (这可以在你的主板上找到，请看 `这里 <https://docs-old.luxonis.com/faq/#what-are-the-minimum-and-maximum-depth-visible-by-depthai>`__ ，所以焦距是
 
 .. code-block:: python
 
@@ -627,9 +627,9 @@ DepthAI 可见的最小深度是多少？
 这将最大视差搜索从 96 增加到 192。
 因此，这会将最小可感知距离减半 (假设最小距离现在是 :code:`focal_length * base_line_dist / 192` ，而不是  :code:`focal_length * base_line_dist / 96`).
 
-- DepthAI RPi 计算模块版本 (`BW1097 <https://docs.luxonis.com/products/bw1097/>`__)： **0.414** 米
-- USB3C 板载摄像头版本 (`BW1098OBC <https://docs.luxonis.com/products/bw1098obc/>`__)： **0.345** 米
-- 模块化相机的最小间距  (例如 `BW1098FFC <https://docs.luxonis.com/products/bw1098ffc/>`__)： **0.115** 米
+- DepthAI RPi 计算模块版本 (`BW1097 <https://docs-old.luxonis.com/products/bw1097/>`__)： **0.414** 米
+- USB3C 板载摄像头版本 (`BW1098OBC <https://docs-old.luxonis.com/products/bw1098obc/>`__)： **0.345** 米
+- 模块化相机的最小间距  (例如 `BW1098FFC <https://docs-old.luxonis.com/products/bw1098ffc/>`__)： **0.115** 米
 
 因此，如果您在使用融合了视差深度的单眼神经推理时需要更短的最小距离，请通过 SLACK、电子邮件或讨论网站与我们联系，让我们知道。它在我们的路线图上，但是我们尚未看到它的需求，因此我们还没有优先考虑实施它 (还没有！)
 
@@ -714,7 +714,7 @@ DepthAI 对于 :code:`深度` 流和物体探测器 (如 MobileNet-SSD、YOLO �
   - :code:`right` - 右边的灰度相机（板上标有 `R` 或 `RIGHT` ）
   - :code:`rectified_left` - `已整改的 <https://en.wikipedia.org/wiki/Image_rectification>`__ 左相机帧
   - :code:`rectified_right` - `已整改的 <https://en.wikipedia.org/wiki/Image_rectification>`__ 右相机帧
-  - :code:`depth` - 深度，单位为 `uint16` （格式见 `这里 <https://docs.luxonis.com/faq/-what-are-the-minimum-and-maximum-depth-visible-by-depthai>`__ 。）
+  - :code:`depth` - 深度，单位为 `uint16` （格式见 `这里 <https://docs-old.luxonis.com/faq/-what-are-the-minimum-and-maximum-depth-visible-by-depthai>`__ 。）
   - :code:`disparity` - 原始视差
   - :code:`disparity_color` - 在主机上的色差（ :code:`JET` 着色深度的可视化）
   - :code:`meta_d2h` - 设备芯片温度 (最高温度应小于 105 摄氏度)

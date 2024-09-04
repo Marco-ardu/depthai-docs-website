@@ -29,7 +29,7 @@
 教程笔记本
 *Easy_Object_Detection_With_Custom_Data_Demo_Training.ipynb* 显示了如何基于Mobilenet SSDv2网络快速训练对象检测器。
 
-(可选), 请参阅有关此模块的文档 (`此处 <https://docs.luxonis.com/tutorials/object_det_mnssv2_training/>`__)
+(可选), 请参阅有关此模块的文档 (`此处 <https://docs-old.luxonis.com/tutorials/object_det_mnssv2_training/>`__)
 以获取有关如何使用此笔记本的指南/演练。此外，可以随意跳进笔记本电脑，通过一些实验，训练模型相对简单。
 
 训练完成后，它还将模型转换为在我们的 DepthAI 平台和模块上运行的.blob 文件。首先，将模型转换为 OpenVINO 可以使用的称为中间表示(IR)的格式。然后使用我们为此设置的服务器将 IR 模型编译为.blob 文件。 (IR 模型也可以 `本地转换为Blob <https://gitee.com/oakchina/depthai#conversion-of-existing-trained-models-into-intel-movidius-binary-format>`__ )。
@@ -64,7 +64,7 @@
    <h3>在 Google 云端硬盘中调整图片大小  <a href="https://colab.research.google.com/github/luxonis/depthai-ml-training/blob/master/colab-notebooks/GDrive-Resize.ipynb" target="_blank"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a></h2>
 
 该笔记本将在您的Google云端硬盘中处理一组图像，以将其调整为训练笔记本所需的格式。有关更多详细信息，
-请参见 `此处 <https://docs.luxonis.com/tutorials/object_det_mnssv2_training/#step-1-find-or-generate-images-of-the-objects-of-interest>`__ 的文档。
+请参见 `此处 <https://docs-old.luxonis.com/tutorials/object_det_mnssv2_training/#step-1-find-or-generate-images-of-the-objects-of-interest>`__ 的文档。
 
 .. include::  /pages/includes/footer-short.rst
 

@@ -50,7 +50,7 @@ github 存储库。
 
 - `MyriadX <https://www.intel.com/content/www/us/en/products/details/processors/movidius-vpu/movidius-myriad-x.html>`__ 是 DepthAI 上的 VPU，您可以在其中运行您的管道
 - MyriadX 连接到主机（例如 PC）
-- MyriadX 可以通过 SPI (使用 `SPIOut <https://docs.luxonis.com/projects/api/en/latest/components/nodes/spi_out/>`__  节点)向 ESP32发送 `信息 <https://docs.luxonis.com/projects/api/en/latest/components/messages/>`__
+- MyriadX 可以通过 SPI (使用 `SPIOut <https://docs-old.luxonis.com/projects/api/en/latest/components/nodes/spi_out/>`__  节点)向 ESP32发送 `信息 <https://docs-old.luxonis.com/projects/api/en/latest/components/messages/>`__
 - ESP32可以使用 `depthai-spi-api <https://github.com/luxonis/depthai-spi-api>`__ 库(这是 `ESP-IDF <https://github.com/espressif/esp-idf>`__ 组件)接收这些消息。
 - 在 ESP32上，你可以运行消息的后期处理，并有选择地将结果发送到服务器(如果连接到 WiFi 网络)或蓝牙设备(如智能手机)
 
@@ -79,7 +79,7 @@ ESP32的通用用例
 - 您可以在 VPU 上运行空间对象检测和/或对象跟踪管道，并通过 SPI 向 ESP32发送带有空间数据的 tracklet。在 ESP32上，您可以运行一些简单的过滤和/或 NN 结果解码，然后将最终结果发送到云
 - ESP32还可以闪存 DepthAI 引导加载程序和/或管道，这意味着支持 OTA (通过无线方式)更新。
 - 我们有一个例子，通过 SPI 从 VPU 到 ESP32发送一个 `完整的图像 <https://github.com/luxonis/esp32-spi-message-demo/tree/main/jpeg_demo>`__ 或 `一个图像的一部分 <https://github.com/luxonis/esp32-spi-message-demo/tree/main/image_part>`__ 
-- 可以将 VPU 上的管道配置为将系统信息(使用 `SystemLogger <https://docs.luxonis.com/projects/api/en/latest/components/nodes/system_logger/>`__ 节点)发送到 ESP32，再由 ESP32将其转发到日志平台
+- 可以将 VPU 上的管道配置为将系统信息(使用 `SystemLogger <https://docs-old.luxonis.com/projects/api/en/latest/components/nodes/system_logger/>`__ 节点)发送到 ESP32，再由 ESP32将其转发到日志平台
 - ESP32 也有蓝牙功能，所以你可以将数据从 ESP32转发到智能手机
 
 如何开始开发

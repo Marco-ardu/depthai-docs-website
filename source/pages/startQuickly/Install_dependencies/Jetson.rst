@@ -92,7 +92,7 @@ Jetson平台
 .. code-block:: bash
 
     #下载并安装依赖包
-    sudo wget -qO- http://docs.luxonis.com/_static/install_dependencies.sh | bash
+    sudo wget -qO- http://docs-old.luxonis.com/_static/install_dependencies.sh | bash
 
     #克隆 github 仓库
     git clone https://github.com/luxonis/depthai-python.git

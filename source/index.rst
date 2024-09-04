@@ -429,7 +429,7 @@ OAK开源项目合集： `查看 <https://www.oakchina.cn/oak-opensource-project
 
 OAK官方GitHub： `查看 <https://github.com/luxonis>`__
 
-OAK官方英文原版使用文档： `查看 <https://docs.luxonis.com/en/latest/>`__
+OAK官方英文原版使用文档： `查看 <https://docs-old.luxonis.com/en/latest/>`__
 
 .. include::  /pages/includes/footer-long.rst
 
@@ -481,7 +481,7 @@ OAK官方英文原版使用文档： `查看 <https://docs.luxonis.com/en/latest
 
    pages/Advanced/Neural-networks.rst
    pages/Advanced/CV.rst
-   3D人工智能相关教程 <https://docs.luxonis.com/en/latest/pages/spatial-ai/#>
+   3D人工智能相关教程 <https://docs-old.luxonis.com/en/latest/pages/spatial-ai/#>
 
 .. toctree::
    :maxdepth: 1

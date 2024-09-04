@@ -205,7 +205,7 @@ Windows上的“导入cv2时DLL加载失败”
 
   python3 -c "import cv2; import numpy as np; blank_image = np.zeros((500,500,3), np.uint8); cv2.imshow('s', blank_image); cv2.waitKey(0)"
 
-如果没有显示一个窗口，或者如果你得到 :code:`Illegal instruction` 指令结果,这意味着 OpenCV 安装有问题。 `这里 <https://docs.luxonis.com/en/latest/pages/api/#supported-platforms>`__ 的安装脚本通常会修复 OpenCV 问题。但如果他们不这样做，运行 :code:`python3 -m pip install opencv-python --force-reinstall` 也可以解决OpenCV的问题。
+如果没有显示一个窗口，或者如果你得到 :code:`Illegal instruction` 指令结果,这意味着 OpenCV 安装有问题。 `这里 <https://docs-old.luxonis.com/en/latest/pages/api/#supported-platforms>`__ 的安装脚本通常会修复 OpenCV 问题。但如果他们不这样做，运行 :code:`python3 -m pip install opencv-python --force-reinstall` 也可以解决OpenCV的问题。
 
 用不兼容的 openvino 版本编译的神经网络 blob
 ##############################################
@@ -228,7 +228,7 @@ Raspberry Pi出现 "realloc(): invalid pointern Aborted"
 在树莓派上，运行 :code:`sudo upgrade` 后，在导入cv2的时候可能会出现 :code:`realloc(): invalid pointern Aborted` 错误。我们也遇到了同样的问题，并且找到了 **解决方案** :
 
 - 通过运行 :code:`sudo apt install -y --allow-downgrades libc6=2.28-10+rpi1` 命令使libc6降级。
-- 通过运行以下 :code:`sudo curl -fL http://docs.luxonis.com/_static/install_dependencies.sh | bash` 命令重新安装depthai依赖。
+- 通过运行以下 :code:`sudo curl -fL http://docs-old.luxonis.com/_static/install_dependencies.sh | bash` 命令重新安装depthai依赖。
 
 
 .. include::  /pages/includes/footer-short.rst

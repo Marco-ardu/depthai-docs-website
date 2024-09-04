@@ -22,7 +22,7 @@ PoE 允许使用单根 Cat5e（或更高）以太网电缆为设备供电并为�
 #. 您将需要一个 PoE 交换机或注入器 **来为PoE设备供电**. ::ref:`单击此处获取完整教程 <为PoE设备供电>`. 为设备供电后，LED 应开始闪烁，如上面的 GIF 所示。
 #. 将您的计算机连接到与PoE 设备相同的 `LAN <https://en.wikipedia.org/wiki/Local_area_network>`__ 。
 #. 确保你有 **depthai version 2.7.0.0** 或更新版本。您可以使用以下命令更新您的depthai python包 :code:`python3 -m pip install depthai>=2.7.0.0`
-#. 现在，您可以像使用 USB-C 电缆连接 DepthAI 设备一样运行任何 `代码示例 <https://docs.luxonis.com/projects/api/en/latest/tutorials/code_samples/>`__ / `depthai 实验 <https://github.com/luxonis/depthai-experiments>`__ / `depthai_demo <https://github.com/luxonis/depthai>`__ ！
+#. 现在，您可以像使用 USB-C 电缆连接 DepthAI 设备一样运行任何 `代码示例 <https://docs-old.luxonis.com/projects/api/en/latest/tutorials/code_samples/>`__ / `depthai 实验 <https://github.com/luxonis/depthai-experiments>`__ / `depthai_demo <https://github.com/luxonis/depthai>`__ ！
 
 .. image:: /_static/images/tutorials/poe/poe-working.jpeg
     :alt: POE-working
@@ -33,7 +33,7 @@ PoE 允许使用单根 Cat5e（或更高）以太网电缆为设备供电并为�
 POE版本的OAK如何运作
 ########################
 
-当您的程序尝试创建设备 (:code:`with dai.Device(pipeline) as device:`) 时，depthai将搜索通过 USB 端口或 LAN 连接的可用设备。它在同一网络（例如 LAN）上搜索 PoE 设备并通过 TCP 协议进行通信。这样 PoE 设备的工作方式与 USB 设备相同。与 USB-C 连接一样，您可以指定 Mx ID 以指定您想要连接到哪个 DepthAI PoE 设备(`了解更多信息请点击此处 <https://docs.luxonis.com/projects/api/en/latest/tutorials/multiple/>`__)。
+当您的程序尝试创建设备 (:code:`with dai.Device(pipeline) as device:`) 时，depthai将搜索通过 USB 端口或 LAN 连接的可用设备。它在同一网络（例如 LAN）上搜索 PoE 设备并通过 TCP 协议进行通信。这样 PoE 设备的工作方式与 USB 设备相同。与 USB-C 连接一样，您可以指定 Mx ID 以指定您想要连接到哪个 DepthAI PoE 设备(`了解更多信息请点击此处 <https://docs-old.luxonis.com/projects/api/en/latest/tutorials/multiple/>`__)。
 
 PoE 故障排除
 ###################

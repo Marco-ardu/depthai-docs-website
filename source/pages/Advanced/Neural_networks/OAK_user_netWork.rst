@@ -46,7 +46,7 @@ https://docs.oakchina.cn/en/latest/pages/Advanced/Neural_networks/local_convert_
 ------------------------------------------------------------------------------------------------
 
 当BLOB模型转换好后，我们将模型路径放在代码里，实现模型的调用运行，具体方法可以参考以下两个地方的代码：
-https://docs.luxonis.com/projects/api/en/latest/samples/Yolo/tiny_yolo/
+https://docs-old.luxonis.com/projects/api/en/latest/samples/Yolo/tiny_yolo/
 https://gitcode.net/oakchina/depthai-examples/-/tree/master/depthai_yolo
 
 .. include::  /pages/includes/footer-long.rst

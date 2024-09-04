@@ -8,7 +8,7 @@ AI / ML / NN
    tutorials/pretrained_openvino.rst
    tutorials/local_convert_openvino.rst
 
-`OAK Camera <https://docs.luxonis.com/projects/hardware/en/latest/>`__ 可以 **运行任何 AI 模型**, 甚至是自定义架构/构建的模型。您甚至可以同时运行多个 AI 模型，并行或串行(`此处为演示 <https://github.com/luxonis/depthai-experiments/tree/master/gen2-gaze-estimation#gen2-gaze-estimation>`__)。
+`OAK Camera <https://docs-old.luxonis.com/projects/hardware/en/latest/>`__ 可以 **运行任何 AI 模型**, 甚至是自定义架构/构建的模型。您甚至可以同时运行多个 AI 模型，并行或串行(`此处为演示 <https://github.com/luxonis/depthai-experiments/tree/master/gen2-gaze-estimation#gen2-gaze-estimation>`__)。
 
 要在设备上运行自定义 AI 模型， 您需要 **将其转换** 成 :code:`.blob` 格式 - :ref:`文档在此处 <将模型转换为MyriadX blob>`.
 
@@ -29,7 +29,7 @@ AI视觉任务
 
 我们为许多不同的AI视觉任务提供开源示例和演示，例如：
 
-- **Object detection** 模型提供所有检测到的对象的边界框、置信度和标签。 示例: `MobileNet <https://docs.luxonis.com/projects/api/en/latest/samples/MobileNet/rgb_mobilenet/#rgb-mobilenetssd>`__, `Yolo <https://docs.luxonis.com/projects/api/en/latest/samples/Yolo/tiny_yolo/#rgb-tiny-yolo>`__, `EfficientDet <https://github.com/luxonis/depthai-experiments/tree/master/gen2-efficientDet>`__, `Palm detection <https://github.com/luxonis/depthai-experiments/tree/master/gen2-palm-detection>`__.
+- **Object detection** 模型提供所有检测到的对象的边界框、置信度和标签。 示例: `MobileNet <https://docs-old.luxonis.com/projects/api/en/latest/samples/MobileNet/rgb_mobilenet/#rgb-mobilenetssd>`__, `Yolo <https://docs-old.luxonis.com/projects/api/en/latest/samples/Yolo/tiny_yolo/#rgb-tiny-yolo>`__, `EfficientDet <https://github.com/luxonis/depthai-experiments/tree/master/gen2-efficientDet>`__, `Palm detection <https://github.com/luxonis/depthai-experiments/tree/master/gen2-palm-detection>`__.
 - **Landmark detection** 模型提供对象的特征/关键点。 示例: `Human pose <https://github.com/geaxgx/depthai_blazepose#blazepose-tracking-with-depthai>`__, `hand landmarks <https://github.com/geaxgx/depthai_hand_tracker#hand-tracking-with-depthai>`__, and `facial landmarks <https://github.com/luxonis/depthai-experiments/tree/master/gen2-facemesh#gen2-facial-landmarks-on-depthai>`__.
 - **Semantic segmentation** 模型为每个像素提供标签/类别。 示例: `Person segmentation <https://github.com/luxonis/depthai-experiments/tree/master/gen2-deeplabv3_depth>`__, `multiclass segmentation <https://github.com/luxonis/depthai-experiments/tree/master/gen2-deeplabv3_multiclass#gen2-deeplabv3-multiclass-on-depthai>`__, `road segmentation <https://github.com/luxonis/depthai-experiments/tree/master/gen2-road-segmentation#gen2-road-segmentation-on-depthai>`__.
 - **Classification** 模型提供分类标签和对该标签的置信度。 示例: `EfficientNet <https://github.com/luxonis/depthai-experiments/tree/master/gen2-efficientnet-classification#efficientnet-b0>`__, `Tensorflow classification <https://github.com/luxonis/depthai-experiments/tree/master/gen2-tf-image-classification#demo>`__, `fire classification <https://github.com/luxonis/depthai-experiments/tree/master/gen2-fire-detection>`__, `emotions classification <https://github.com/luxonis/depthai-experiments/tree/master/gen2-emotion-recognition>`__.

@@ -3,7 +3,7 @@ OAK 与 SLAM
 
 可以使用我们的OAK设备执行 `SLAM <https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping>`__ (同时定位和映射)。
 
-我们计划创建我们自己的视觉惯性 SLAM 项目，该项目将使用设备上的特征跟踪(使用 `FeatureTracker <https://github.com/luxonis/depthai-python/blob/develop/examples/feature_tracker.py>`__ 节点)和间隙数据(使用 `IMU <https://docs.luxonis.com/projects/api/en/latest/components/nodes/imu/>`__ 节点)，如果设备有板载 IMU 传感器。
+我们计划创建我们自己的视觉惯性 SLAM 项目，该项目将使用设备上的特征跟踪(使用 `FeatureTracker <https://github.com/luxonis/depthai-python/blob/develop/examples/feature_tracker.py>`__ 节点)和间隙数据(使用 `IMU <https://docs-old.luxonis.com/projects/api/en/latest/components/nodes/imu/>`__ 节点)，如果设备有板载 IMU 传感器。
 
 - `ArduCam Visual SLAM tutorial <https://www.arducam.com/docs/opencv-ai-kit-oak/performing-location-with-visual-slam/>`__
 - `OAKD_ORBSLAM3 <https://github.com/duncanrhamill/oakd_orbslam3>`__
