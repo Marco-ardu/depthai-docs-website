@@ -28,17 +28,19 @@ ubuntu20.04推荐安装noetic版本的ROS，ubuntu18.04推荐安装melodic版本
     echo 'SUBSYSTEM=="usb", ATTRS{idVendor}=="03e7", MODE="0666"' | sudo tee /etc/udev/rules.d/80-movidius.rules
     sudo udevadm control --reload-rules && sudo udevadm trigger
 
-depthai core安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/releases/>`__
+.. note:: 
+
+    depthai core安装包 `下载地址 <https://gitee.com/oakchina/depthai-core/releases/>`__，以下安装命令作为参考，具体版本请以下载地址里的最新版本为准。
 
 .. code-block:: bash
 
-    sudo apt install ./depthai_2.15.0_x86_64_Shared.deb
+    sudo apt install ./depthai_2.28.0_amd64.deb
 
 如果您没有安装 opencv，请尝试:
 
 .. note:: 
 
-    Jetson平台不需要安装opencv,系统自带
+    Jetson平台不需要安装opencv，系统自带
 
 .. code-block:: bash
 
