@@ -7,7 +7,7 @@ ubuntu 18.04 OAK-D kalibr 双目+imu联合标定
 * 环境干净的ubuntu18.04系统
 * OAK-D + USB3.0数据线 (或者是其他支持双目+imu的OAK相机)
 * 打印标定板(这里使用的是Aprilgrid)， `下载地址 <https://www.oakchina.cn/wp-content/uploads/2022/08/april_6x6_80x80cm_A0.pdf>`__
-* 标定板配置文件，根据实际打印大小填写到april_6x6.yaml
+* 标定板配置文件，新建april_6x6.yaml，以下是文件内容，根据实际打印大小填写
 
 .. code-block:: yaml
 
@@ -39,44 +39,64 @@ ROS melodic + depthai_ros :ref:`教程链接 <ROS1 noetic + depthai_ros教程>` 
 编译kalibr
 """"""""""""
 
+安装依赖
+
 .. code-block:: bash
 
     sudo apt install libsuitesparse-dev
     sudo apt install libv4l-dev
+    sudo apt install python-igraph
+    python3 -m pip install scipy
 
-`源码地址 <https://github.com/ethz-asl/kalibr.git>`__ ，克隆源码到src目录下，然后在kalibr_ws工作目录下使用catkin_make命令编译
-
-.. image:: /_static/images/ros_oak_d_kalibr/kalibr.png
-
-以下是标定时需要的依赖
+克隆源码到src目录下，然后在 kalibr_ws 工作目录下使用 catkin_make 命令编译
 
 .. code-block:: bash
 
-    sudo apt-get install python-igraph
-    python -m pip install scipy
+    mkdir -p kalibr_ws/src
+    cd kalibr_ws/src
+    git clone https://github.com/ethz-asl/kalibr.git
+    cd ..
+    source /opt/ros/melodic/setup.bash
+    catkin_make
+
+.. image:: /_static/images/ros_oak_d_kalibr/kalibr.png
 
 安装Ceres Solver
 """"""""""""
 
-按照 `官方教程 <http://ceres-solver.org/installation.html>`__ 安装Ceres Solver
+参考 `官方教程 <http://ceres-solver.org/installation.html>`__ 安装Ceres Solver
 
 编译code_utils
 """"""""""""
+
+安装依赖
 
 .. code-block:: bash
 
     sudo apt install libdw-dev
 
-`源码地址 <https://github.com/gaowenliang/code_utils>`__ ,克隆源码到src目录下
+克隆源码到src目录下, 在 code_utils 下面找到 sumpixel_test.cpp，修改 #include "backward.hpp" 为 #include “code_utils/backward.hpp”，然后在 kalibr_ws 工作目录下使用 catkin_make 命令编译
 
-在code_utils下面找到sumpixel_test.cpp，修改#include "backward.hpp"为 #include “code_utils/backward.hpp”，然后在kalibr_ws工作目录下使用catkin_make命令编译
+.. code-block:: bash
+    
+    cd src
+    git clone https://github.com/gaowenliang/code_utils.git
+    cd ..
+    catkin_make
 
 .. image:: /_static/images/ros_oak_d_kalibr/code_utils.png
 
 编译imu_utils
 """"""""""""
 
-`源码地址 <https://github.com/gaowenliang/imu_utils>`__ ，克隆源码到src目录下，然后在kalibr_ws工作目录下使用catkin_make命令编译
+克隆源码到src目录下，然后在 kalibr_ws 工作目录下使用 catkin_make 命令编译
+
+.. code-block:: bash
+    
+    cd src
+    git clone https://github.com/gaowenliang/imu_utils.git
+    cd ..
+    catkin_make
 
 .. image:: /_static/images/ros_oak_d_kalibr/imu_utils.png
 
@@ -94,13 +114,14 @@ ROS melodic + depthai_ros :ref:`教程链接 <ROS1 noetic + depthai_ros教程>` 
     source devel/setup.bash
     roslaunch depthai_examples stereo_inertial_node.launch enableRviz:=false depth_aligned:=false stereo_fps:=4
 
+标定过程中会使用到以下的话题
+
 .. code-block:: bash
 
     rostopic list
 
 .. image:: /_static/images/ros_oak_d_kalibr/rostopic_list.png
 
-使用到以上图中画框的话题
 
 双目
 """"""""""""
@@ -120,7 +141,7 @@ imu
 
 .. note::
 
-    录制imu数据时相机静止，时间要大于2个小时
+    录制imu数据时相机静止不动，时间要大于2个小时
 
 .. code-block:: bash
 
@@ -155,7 +176,7 @@ imu
 
 .. image:: /_static/images/ros_oak_d_kalibr/kalibr_oak_d__stereo_resjpg.jpg
 
-输出cam_chain.yaml
+生成的 cam_chain.yaml 内容如下
 
 .. code-block:: yaml
 
@@ -184,28 +205,21 @@ imu
 imu
 """"""""""""
 
-oak_d.launch文件内容，放在imu_utils/launch目录下
+新建 oak_d.launch 文件内容，放在 imu_utils/launch 目录下
 
-.. code-block:: launch
+.. code-block:: xml
 
     <launch>
         <node pkg="imu_utils" type="imu_an" name="imu_an" output="screen">
             <param name="imu_topic" type="string" value= "/stereo_inertial_publisher/imu"/>
-            <param name="imu_name" type="string" value= "ZR300"/>
+            <param name="imu_name" type="string" value= "oak-d"/>
             <param name="data_save_path" type="string" value= "$(find imu_utils)/data/"/>
             <param name="max_time_min" type="int" value= "80"/>
             <param name="max_cluster" type="int" value= "100"/>
         </node>
     </launch>
 
-播放录制的imu数据，200倍速播放
-
-.. code-block:: bash
-
-    roscore
-    rosbag play -r 200　imu_utils/imu.bag
-
-启动oak_d.launch
+启动 oak_d.launch
 
 .. code-block:: bash
 
@@ -213,7 +227,13 @@ oak_d.launch文件内容，放在imu_utils/launch目录下
     source devel/setup.bash
     roslaunch imu_utils oak_d.launch
 
-输出imu_param.yaml
+播放录制的 imu 数据，200倍速播放
+
+.. code-block:: bash
+
+    rosbag play -r 200　imu_utils/imu.bag
+
+生成的 imu_param.yaml 内容如下
 
 .. code-block:: yaml
 
@@ -253,9 +273,9 @@ oak_d.launch文件内容，放在imu_utils/launch目录下
 双目+imu
 """"""""""""
 
-需要三个文件：双目+imu的采集数据、根据生成的imu标定结果填写的imu.yaml、双目标定结果
+需要三个文件：双目+imu的采集数据、根据生成的imu标定结果填写的imu.yaml、双目标定结果文件
 
-imu.yaml
+以下为 imu.yaml 文件内容，需要自己创建填写
 
 .. code-block:: yaml
 
