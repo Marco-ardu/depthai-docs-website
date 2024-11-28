@@ -173,7 +173,7 @@ depthai-experiments     一些实验性模型示例
 device_manager.exe
 ^^^^^^^^^^^^^^^^^^^^^^
 
-我们把device_manager.py打包成了exe程序， `下载链接 <https://pan.baidu.com/s/1G9MbWmdFTmEExf27ROImKA>`__ 提取码: gkb3
+我们把device_manager.py打包成了exe程序， `下载链接 <https://pan.baidu.com/s/1jwxSNw6o-VsP-_GCzWrA8Q>`__ 提取码: xukn
 
 .. image:: /_static/images/GetStartedQuickly/device_manager_show.png
 
